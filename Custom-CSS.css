@@ -1,4 +1,10 @@
-/* Mobile Menu Text */
+/*
+	*
+	*
+	* Mobile Menu Text
+	*
+	*
+*/
 
 .burger-box:after {
 	content: "Order Now";
@@ -31,7 +37,13 @@
 	}
 }
 
-/* Custom modification of fonts */
+/*
+	*
+	*
+	* Custom modifications
+	*
+	*
+*/
 
 body,
 button,
@@ -75,7 +87,54 @@ h6 {
 	font-size: .67rem
 }
 
-/* Dropdown Box */
+.sqs-block {
+	padding-top: 7px important;
+	padding-bottom: 7px important;
+}
+
+/*
+	*
+	*
+	* Header navigation
+	*
+	*
+*/
+
+.header .header-announcement-bar-wrapper {
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	box-sizing: border-box;
+	padding-top: 0 !important;
+	padding-bottom: 0 !important;
+	padding-left: 2vw;
+	padding-right: 2vw;
+	pointer-events: auto;
+}
+
+
+/*
+	*
+	*
+	* Logo
+	*
+	*
+*/
+
+.header-title-logo img {
+	width: auto;
+	max-width: 100%;
+	max-height: 80px !important;
+}
+
+/*
+	*
+	*
+	* Dropdown on FAQs section
+	*
+	*
+*/
+
 .dropdown {
 	margin-bottom: 2vw;
 	/*spacing between boxes */
@@ -95,6 +154,7 @@ h6 {
 	/*spacing between box and outline*/
 	margin: auto 0px;
 	cursor: pointer;
+	text-transform: none !important;
 }
 
 .dropdown p {
@@ -120,6 +180,47 @@ h6 {
 	float: right;
 }
 
+
+
+/*
+	*
+	*
+	* Menu items
+	*
+	*
+*/
+.summary-excerpt p {
+	font-size: 16px !important;
+	text-align: justify !important;
+}
+
+.summary-price .product-price {
+	font-size: 20px !important;
+	margin-bottom: 1rem !important;
+	font-weight: 700 !important;
+}
+
+/*
+	*
+	*
+	* Menu items
+	*
+	*
+*/
+
+.sqs-block-image .design-layout-card .image-title-wrapper+.image-subtitle-wrapper .image-subtitle {
+	margin-top: 6%;
+	text-align: justify !important;
+}
+
+
+/*
+	*
+	*
+	* Custom fonts imports
+	*
+	*
+*/
 
 @font-face {
 	font-family: 'Moonrising';
