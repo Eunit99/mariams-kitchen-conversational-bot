@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/styles.css">
+		<title>Mariams Kitchen FAQs</title>
+
+		<!-- Code Injection -->
+		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+	</head>
+
+	<body>
+
+
+		<!-- FAQs -->
+
+
+
+
+		<!-- First column -->
+
+		<div class="dropdown">
+			<h3>Where are you located?</h3>
+			<div class="answer">
+				<p>Mariam's Kitchen operates from Brooklyn, NY.</p>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<h3>Do you teach private cooking classes?</h3>
+			<div class="answer">
+				<p>Yes, kindly send us an email with your inquiry to <a
+						href="mailto:eat@mariamskitchen.nyc">eat@mariamskitchen.nyc</a></p>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<h3>How far do you deliver?</h3>
+			<div class="answer">
+				<p>No more than a 20-mile radius of the Barclays Center.</p>
+			</div>
+		</div>
+
+
+		<!-- Second column -->
+
+		<div class="dropdown">
+			<h3>Do you offer Vegetarian/Vegan options?</h3>
+			<div class="answer">
+				<p>Yes. We can customize your order based on your preferences. Kindly send us an email with a detailed request.
+				</p>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<h3>What is your refund policy?</h3>
+			<div class="answer">
+				<p>Mariam’s Kitchen does not offer refunds.</p>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<h3>Do you cater?</h3>
+			<div class="answer">
+				<p>Yes! We do weddings, parties, and private events. The minimum for a catering order is $250. Email us at <a
+						href="mailto:eat@mariamskitchen.nyc">eat@mariamskitchen.nyc</a> to place your order.</p>
+			</div>
+		</div>
+
+
+
+		<!-- Third Column -->
+
+		<div class="dropdown">
+			<h3>
+				When can I place order for the weekend special?
+			</h3>
+			<div class="answer">
+				<p>Mondays 12pm – Wednesdays 11:59pm.</p>
+				<p>No exceptions.</p>
+			</div>
+		</div>
+
+		<div class="dropdown">
+			<h3>
+				When can my weekend menu order be delivered/picked up?
+			</h3>
+			<div class="answer">
+				<p>Weekend menu orders are available for delivery/pick up between 5pm-8pm </p>
+			</div>
+		</div>
+
+	</body>
+	<!-- Code injection -->
+	<script type="text/javascript">
+		! function (t, e) {
+			t.artibotApi = {
+				l: [],
+				t: [],
+				on: function () {
+					this.l.push(arguments)
+				},
+				trigger: function () {
+					this.t.push(arguments)
+				}
+			};
+			var a = !1,
+				i = e.createElement("script");
+			i.async = !0, i.type = "text/javascript", i.src = "https://app.artibot.ai/loader.js", e.getElementsByTagName("head")
+				.item(0).appendChild(i), i.onreadystatechange = i.onload = function () {
+					if (!(a || this.readyState && "loaded" != this.readyState && "complete" != this.readyState)) {
+						new window.ArtiBot({
+							i: "b3d644c8-4c4d-417a-aa0f-1deac305c18e"
+						});
+						a = !0
+					}
+				}
+		}(window, document);
+	</script>
+
+	<script>
+		$(".dropdown h3").click(function () {
+			$(this).nextUntil("h3").slideToggle("slow");
+		});
+	</script>
+
+</html>
