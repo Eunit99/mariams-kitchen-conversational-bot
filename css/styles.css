@@ -10,6 +10,7 @@
 * Logo
 * Dropdown on FAQs section
 * Menu items
+* Catering Section
 * Footer
 * Responsiveness
 * =========================
@@ -165,8 +166,10 @@ h6 {
 .container:not(.footer .container) {
 	width: 100% !important;
 	max-width: 1440px;
-	margin: auto !important;
+	margin: 1.825rem auto !important;
 }
+
+
 
 /*
 	*
@@ -320,6 +323,83 @@ select::-ms-expand {
 	margin-top: 6%;
 	text-align: justify !important;
 }
+
+
+/*
+	*
+	*
+	* Catering Section
+	*
+	*
+*/
+
+section.catering {
+	color: #3C3025;
+
+}
+
+section.catering .profile-img {
+	background-color: #fff;
+	/* background-image: url(https://www.mariamskitchen.nyc/s/Mariam-picture.png); */
+	background-image: url(../Assets/Yes-We-Order/Mariam-picture.png);
+	background-size: cover;
+	background-repeat: no-repeat;
+	padding: 0;
+	height: 100%;
+	width: 100%;
+}
+
+section.catering .catering-details {
+	padding: 1rem;
+	max-width: 98%;
+	font-weight: bold;
+}
+
+section.catering .catering-details,
+section.catering .catering-details .catering-description p,
+section.catering .catering-details .catering-description ul {
+	font-weight: bold;
+}
+
+section.catering .catering-description {
+	font-weight: 500;
+}
+
+section.catering .cta-btn-container {
+	margin-top: 1.825rem;
+}
+
+section.catering .btn {
+	font-family: "DM Sans", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 26px;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+	-moz-border-radius: 8px;
+	-ms-border-radius: 8px;
+	-o-border-radius: 8px;
+	margin: auto 4px;
+	padding: 10px 12px;
+}
+
+section.catering a.btn {
+	text-decoration: none;
+}
+
+section.catering .btn.order {
+	background-color: #CC5500;
+	color: #fff
+}
+
+section.catering .btn.menu-pdf {
+	color: #CC5500;
+	background-color: #fff;
+	border: 1px solid #CC5500;
+}
+
+
 
 /*
 	*

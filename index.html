@@ -21,6 +21,63 @@
 	<body>
 
 
+		<!-- Catering section -->
+		<section class="catering" id="catering">
+			<div class="container">
+				<div class="row">
+					<!-- Profile img container -->
+					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-6">
+						<div class="profile-img"></div>
+					</div>
+					<!-- /Profile img container -->
+
+
+					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-6">
+						<div class="catering-details">
+
+							<p class="title">YES WE CATER</p>
+							<h1 class="title">
+								Book us for your next event. Everyone will remember what was on their plate.
+							</h1>
+							<div class="catering-description">
+								<p>We cater to:</p>
+								<div class="row">
+									<div class="col-xs-12 col-md-12 col-lg-6">
+										<ul>
+											<li>Baby Shower</li>
+											<li>Naming Ceremony</li>
+											<li>Wedding</li>
+											<li>Birthday/Graduation</li>
+										</ul>
+									</div>
+									<div class="col-xs-12 col-md-12 col-lg-6">
+										<ul>
+											<li>Brunch Party </li>
+											<li>Business/Product Launch</li>
+											<li>Religious Celebrations</li>
+										</ul>
+									</div>
+								</div>
+								<p>And so many more events. Reach out to us today.</p>
+							</div>
+
+
+							<!-- CTA btn container -->
+							<div class="cta-btn-container">
+								<a href="#" onclick="" class="btn order">Order Catering</a>
+								<a href="/s/Mariams-Kitchen-menu-1.pdf" class="btn menu-pdf" title="Download Menu PDF">Download Menu</a>
+							</div>
+							<!-- /CTA btn container -->
+
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- /Catering section -->
+
+
+
 		<!-- FAQs -->
 		<div class="container">
 			<div class="row">
@@ -174,46 +231,48 @@
 
 
 
-	<!-- Code injection -->
-	<!-- Place this part in the code injection part of the website in the footer -->
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-		integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-	</script>
-	<script type="text/javascript">
-		! function (t, e) {
-			t.artibotApi = {
-				l: [],
-				t: [],
-				on: function () {
-					this.l.push(arguments)
-				},
-				trigger: function () {
-					this.t.push(arguments)
-				}
-			};
-			var a = !1,
-				i = e.createElement("script");
-			i.async = !0, i.type = "text/javascript", i.src = "https://app.artibot.ai/loader.js", e.getElementsByTagName("head")
-				.item(0).appendChild(i), i.onreadystatechange = i.onload = function () {
-					if (!(a || this.readyState && "loaded" != this.readyState && "complete" != this.readyState)) {
-						new window.ArtiBot({
-							i: "b3d644c8-4c4d-417a-aa0f-1deac305c18e"
-						});
-						a = !0
+		<!-- Code injection -->
+		<!-- Place this part in the code injection part of the website in the footer -->
+		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+		</script>
+		<script type="text/javascript">
+			! function (t, e) {
+				t.artibotApi = {
+					l: [],
+					t: [],
+					on: function () {
+						this.l.push(arguments)
+					},
+					trigger: function () {
+						this.t.push(arguments)
 					}
-				}
-		}(window, document);
-	</script>
+				};
+				var a = !1,
+					i = e.createElement("script");
+				i.async = !0, i.type = "text/javascript", i.src = "https://app.artibot.ai/loader.js", e.getElementsByTagName(
+						"head")
+					.item(0).appendChild(i), i.onreadystatechange = i.onload = function () {
+						if (!(a || this.readyState && "loaded" != this.readyState && "complete" != this.readyState)) {
+							new window.ArtiBot({
+								i: "b3d644c8-4c4d-417a-aa0f-1deac305c18e"
+							});
+							a = !0
+						}
+					}
+			}(window, document);
+		</script>
 
-	<script>
-		$(".dropdown h3").click(function () {
-			$(this).nextUntil("h3").slideToggle("slow");
-		});
-	</script>
+		<script>
+			$(".dropdown h3").click(function () {
+				$(this).nextUntil("h3").slideToggle("slow");
+			});
+		</script>
 
 
 
 
 
 	</body>
+
 </html>
