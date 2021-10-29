@@ -415,7 +415,7 @@ section.catering .btn.menu-pdf {
 	text-align: center;
 	padding: 3.225rem 1rem;
 	font-family: inherit;
-	font-size: 16px;
+	font-size: 20px;
 }
 
 .footer a:link,
@@ -436,11 +436,11 @@ section.catering .btn.menu-pdf {
 
 .footer .footer-link-container .footer-link {
 	margin: auto 14px;
-	font-size: 18px;
 }
 
+.footer h5,
 .footer .footer-link-container .footer-link.instagram-link {
-	font-size: 16px;
+	font-size: 20px;
 }
 
 
