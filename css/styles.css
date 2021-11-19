@@ -27,39 +27,38 @@
 */
 
 @font-face {
-	font-family: 'Moonrising';
-	src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b1978e6877e2709074d70/1632311672112/Moonrising.ttf), url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b197dcb58a6025342df5c/1632311677493/Moonrising.otf);
+	font-family: "DM Sans Regular";
+	src: url("https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/6197ddf3345bd21fd36e9ab3/1637342708208/DMSans-Regular.ttf");
+	src: url("https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/6197ee4bdcb7053a95431a0e/1637346891345/DMSans-Regular.woff") format("woff");
 }
 
 @font-face {
-	font-family: 'Overlock Black';
-	src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b643818e25149436760ff/1632330808919/Overlock-Black.ttf);
+	font-family: "DM Sans MediumItalic";
+	src: url("https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/6197ddef2558ba1a0213304f/1637342703330/DMSans-MediumItalic.ttf");
 }
 
 @font-face {
-	font-family: 'Overlock BlackItalic';
-	src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b643486969d60aa7084da/1632330804727/Overlock-BlackItalic.ttf);
+	font-family: "DM Sans Medium";
+	src: url("https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/6197dde9ad5ff620154b50fe/1637342698149/DMSans-Medium.ttf");
 }
 
 @font-face {
-	font-family: 'Overlock Bold';
-	src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b642fce6c7405ff3b672b/1632330799557/Overlock-Bold.ttf);
+	font-family: "DM Sans Italic";
+	src: url("https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/6197dde3faa4752c8b558ae1/1637342692030/DMSans-Italic.ttf");
 }
 
 @font-face {
-	font-family: 'Overlock BoldItalic';
-	src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b6429fe9fd346125e2694/1632330794196/Overlock-BoldItalic.ttf);
+	font-family: "DM Sans BoldItalic";
+	src: url("https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/6197dddc7e2ba54526ca7060/1637342684350/DMSans-BoldItalic.ttf");
 }
 
 @font-face {
-	font-family: 'Overlock Italic';
-	src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b63fdce6c7405ff3b616b/1632330750122/Overlock-Italic.ttf);
+	font-family: "DM Sans Bold";
+	src: url("https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/6197dd851b81bc18221afda2/1637342597481/DMSans-Bold.ttf");
 }
 
-@font-face {
-	font-family: 'Overlock Regular';
-	src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b63d9d8b6886e92633cb2/1632330713704/Overlock-Regular.ttf);
-}
+
+
 
 /*
 	*
@@ -122,14 +121,14 @@ p,
 .btn.btn--border,
 .theme-btn--primary.btn,
 .summary-title-link {
-	font-family: 'Overlock Regular' !important;
+	font-family: 'DM Sans Regular' !important;
 }
 
 h1,
 h2,
 h3,
 h4 {
-	font-family: 'Moonrising' !important;
+	font-family: 'Moonrising', sans-serif !important;
 	/* text-transform: uppercase; */
 }
 
@@ -193,7 +192,7 @@ select {
 	border: 1px solid #ccc !important;
 	background: #fafafa !important;
 	color: #000 !important;
-	font-family: sans-serif !important;
+	font-family: 'DM Sans Regular' !important;
 	font-size: 12px !important;
 	line-height: normal !important;
 	box-sizing: border-box !important;
@@ -340,8 +339,7 @@ section.catering {
 
 section.catering .profile-img {
 	background-color: #fff;
-	/* background-image: url(https://www.mariamskitchen.nyc/s/Mariam-picture.png); */
-	background-image: url(../Assets/Yes-We-Order/Mariam-picture.png);
+	background-image: url(https://www.mariamskitchen.nyc/s/Mariam-picture.png);
 	background-size: cover;
 	background-repeat: no-repeat;
 	padding: 0;
@@ -409,8 +407,9 @@ section.catering .btn.menu-pdf {
 	*
 */
 
-.footer {
+footer.footer {
 	background-color: #3C3025;
+	font-family: 'DM Sans Regular' !important;
 	color: #fff;
 	text-align: center;
 	padding: 3.225rem 1rem;
@@ -418,9 +417,10 @@ section.catering .btn.menu-pdf {
 	font-size: 20px;
 }
 
-.footer a:link,
-.footer a:active,
-.footer a {
+footer.footer a:link,
+footer.footer a:active,
+footer.footer a {
+	font-family: 'DM Sans Regular' !important;
 	text-decoration: none;
 	color: #fff;
 }
@@ -431,15 +431,18 @@ section.catering .btn.menu-pdf {
 }
 
 .footer .footer-link-container {
+	font-family: 'DM Sans Regular' !important;
 	margin: 2.325rem auto;
 }
 
 .footer .footer-link-container .footer-link {
+	font-family: 'DM Sans Regular' !important;
 	margin: auto 14px;
 }
 
 .footer h5,
 .footer .footer-link-container .footer-link.instagram-link {
+	font-family: 'DM Sans Regular' !important;
 	font-size: 20px;
 }
 
