@@ -334,7 +334,7 @@ select::-ms-expand {
 
 section.catering {
 	color: #3C3025;
-
+	font-family: "DM Sans Regular", sans-serif;
 }
 
 section.catering .profile-img {
@@ -357,6 +357,7 @@ section.catering .catering-details,
 section.catering .catering-details .catering-description p,
 section.catering .catering-details .catering-description ul {
 	font-weight: bold;
+font-family: inherit;
 }
 
 section.catering .catering-description {
