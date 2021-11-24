@@ -5,8 +5,10 @@
 		<meta charset="UTF-8">
 		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 		<title>Mariams Kitchen</title>
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
 		<!-- Code Injection -->
@@ -19,6 +21,18 @@
 	</head>
 
 	<body>
+
+		<!-- Navbar -->
+		<nav class="nav" id="nav">
+			<a href="#" class="active">Mariam's Kitchen</a>
+			<a href="#news">News</a>
+			<a href="#contact">Contact</a>
+			<a href="#about">About</a>
+			<a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</nav>
+		<!-- /Navbar -->
 
 
 		<!-- Catering section -->
@@ -236,43 +250,7 @@
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
 		</script>
-		<script type="text/javascript">
-			! function (t, e) {
-				t.artibotApi = {
-					l: [],
-					t: [],
-					on: function () {
-						this.l.push(arguments)
-					},
-					trigger: function () {
-						this.t.push(arguments)
-					}
-				};
-				var a = !1,
-					i = e.createElement("script");
-				i.async = !0, i.type = "text/javascript", i.src = "https://app.artibot.ai/loader.js", e.getElementsByTagName(
-						"head")
-					.item(0).appendChild(i), i.onreadystatechange = i.onload = function () {
-						if (!(a || this.readyState && "loaded" != this.readyState && "complete" != this.readyState)) {
-							new window.ArtiBot({
-								i: "b3d644c8-4c4d-417a-aa0f-1deac305c18e"
-							});
-							a = !0
-						}
-					}
-			}(window, document);
-		</script>
-
-		<script>
-			$(".dropdown h3").click(function () {
-				$(this).nextUntil("h3").slideToggle("slow");
-			});
-		</script>
-
-
-
-
-
+		<script src="js/script.js"></script>
 	</body>
 
 </html>
