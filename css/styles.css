@@ -149,6 +149,7 @@ h2,
 h3,
 h4 {
 	font-family: 'Overlock Regular', sans-serif !important;
+	font-weight: normal;
 	/* text-transform: uppercase; */
 }
 
@@ -232,13 +233,9 @@ h6 {
 }
 
 .nav a:hover:not(a.active:hover, a.btn.order, a.icon) {
-	background-color: #cc550034 !important;
-	color: black;
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	-ms-border-radius: 6px;
-	-o-border-radius: 6px;
+	/* background-color: #cc550034 !important; */
+	color: var(--color-primary, #cc5500);
+	font-weight: bold;
 }
 
 .nav a.active {
@@ -480,7 +477,7 @@ section.catering .catering-details {
 section.catering .catering-details,
 section.catering .catering-details .catering-description p,
 section.catering .catering-details .catering-description ul {
-	font-weight: bold;
+	font-weight: normal;
 	font-family: inherit;
 }
 
