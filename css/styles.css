@@ -232,7 +232,7 @@ h6 {
 }
 
 .nav a:hover:not(a.active:hover, a.btn.order, a.icon) {
-	background-color: #cc550034;
+	background-color: #cc550034 !important;
 	color: black;
 	border-radius: 6px;
 	-webkit-border-radius: 6px;
@@ -518,7 +518,7 @@ section.catering .btn.order,
 .nav .btn.order {
 	background-color: #CC5500;
 	color: #fff;
-	max-width: 100px;
+	max-width: 120px;
 	margin: auto 12px;
 }
 
