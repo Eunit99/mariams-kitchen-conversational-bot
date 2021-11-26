@@ -182,7 +182,6 @@ h6 {
 	padding-bottom: 7px !important;
 }
 
-
 .container:not(.footer .container) {
 	width: 100% !important;
 	max-width: 1440px;
@@ -192,6 +191,10 @@ h6 {
 .header .header-announcement-bar-wrapper {
 	display: none !important;
 	/* Hide SquareSpace nav */
+}
+
+.mt-3 {
+	margin-top: 1.665rem
 }
 
 /*
@@ -540,7 +543,7 @@ footer.footer {
 	font-family: 'Overlock Regular' !important;
 	color: var(--color-white, #fff);
 	text-align: center;
-	padding: 3.225rem 1rem;
+	padding: 3.225rem 1rem .525rem;
 	font-family: inherit;
 	font-size: 16px;
 }
@@ -569,7 +572,8 @@ footer.footer a {
 }
 
 .footer h5,
-.footer .footer-link-container .footer-link.instagram-link {
+.footer .footer-link-container .footer-link.instagram-link,
+.footer .footer-link-container .footer-link.credit-link {
 	font-family: 'Overlock Regular' !important;
 	font-size: inherit;
 }
