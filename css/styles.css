@@ -142,6 +142,7 @@ p,
 .theme-btn--primary.btn,
 .summary-title-link {
 	font-family: 'Overlock Regular' !important;
+	font-size: 20px;
 }
 
 h1,
@@ -154,11 +155,11 @@ h4 {
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 3rem !important;
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: 2rem !important;
 }
 
 h3 {
@@ -402,6 +403,7 @@ select::-ms-expand {
 .dropdown p {
 	/* font-style: italic; */
 	/* answer italic */
+	font-size: 18px !important;
 }
 
 .answer {
