@@ -3,7 +3,9 @@
 
 * =========================
 * Root colours
+* Utilities
 * Custom fonts imports
+* Popup for Cart
 * Mobile Menu Text
 * Custom modifications
 * Tweak for the select
@@ -22,7 +24,7 @@
 /*
 	*
 	*
-	* Custom fonts imports
+	* Root colours
 	*
 	*
 */
@@ -32,6 +34,30 @@
 	--color-primary: #cc5500;
 	--color-tertiary: #817382;
 	--footer-bg: #3C3025;
+}
+
+
+/*
+	*
+	*
+	* Utilities
+	*
+	*
+*/
+
+.b,
+b {
+	font-weight: 700;
+}
+
+.i,
+i {
+	font-style: italic;
+}
+
+.u,
+u {
+	text-decoration: underline;
 }
 
 /*
@@ -78,6 +104,87 @@
 }
 
 
+/*
+	*
+	*
+	* Popup for Cart
+	*
+	*
+*/
+
+.popup {
+	display: none;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: 332;
+	width: 80%;
+	max-width: 800px;
+	margin: auto;
+	border: 1px solid #007bff;
+}
+
+/* The actual popup */
+.popup .popuptext {
+	background-color: #17a2b8;
+	color: #fff;
+	text-align: center;
+	padding: 25px 10px;
+	display: block;
+	z-index: 1;
+	margin: auto;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	font-size: large;
+}
+
+/* Popup cross */
+
+.popup .cross {
+	position: absolute;
+	right: 2px;
+	top: 1px;
+	padding: 4px 8px;
+	margin-bottom: 22px;
+	cursor: pointer;
+	border-radius: 6px;
+	color: #fff;
+	/* border: 1px solid rgb(168, 164, 164); */
+	z-index: 99999;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup.show {
+	display: block;
+	-webkit-animation: fadeIn 2s;
+	animation: fadeIn 2s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
 
 
 /*
