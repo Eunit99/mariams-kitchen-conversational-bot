@@ -46,3 +46,45 @@ function toggleNav() {
 		x.className = "nav";
 	}
 }
+
+// Popup
+
+// Show popup after 4mss
+function showPopup() {
+	setTimeout(() => {
+		var popup = document.getElementById("popup");
+		popup.classList.add("show");
+	}, 400);
+}
+
+
+// When the user clicks on 'X', close the popup
+function togglePopup() {
+	var popup = document.getElementById("popup"),
+		cross = document.getElementById("cross");
+	cross.addEventListener("click", function () {
+		popup.classList.toggle("show");
+	});
+}
+
+
+let stateCheck = setInterval(() => {
+	if (document.readyState === "complete") {
+		clearInterval(stateCheck);
+		// console.log("Document is ready");
+
+
+		// get the pathname of the page
+		let pathname = window.location.pathname;
+
+		// Match pathname with /cart or /menu
+		if (pathname === "/cart" || pathname === "/menu") {
+
+			// if pathname matches 'cart'
+			showPopup();
+			togglePopup();
+		} else {
+			console.error(`Error! Can't display cart popup. Pathname ${pathname} doesn't match with /cart or /menu`)
+		}
+	};
+}, 100);
