@@ -165,6 +165,12 @@ u {
 	animation: fadeIn 2s;
 }
 
+.popup a {
+	color: var(--color-primary, #cc5500);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
 	from {
