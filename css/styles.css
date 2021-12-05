@@ -3,7 +3,9 @@
 
 * =========================
 * Root colours
+* Utilities
 * Custom fonts imports
+* Popup for Cart
 * Mobile Menu Text
 * Custom modifications
 * Tweak for the select
@@ -22,7 +24,7 @@
 /*
 	*
 	*
-	* Custom fonts imports
+	* Root colours
 	*
 	*
 */
@@ -32,6 +34,30 @@
 	--color-primary: #cc5500;
 	--color-tertiary: #817382;
 	--footer-bg: #3C3025;
+}
+
+
+/*
+	*
+	*
+	* Utilities
+	*
+	*
+*/
+
+.b,
+b {
+	font-weight: 700;
+}
+
+.i,
+i {
+	font-style: italic;
+}
+
+.u,
+u {
+	text-decoration: underline;
 }
 
 /*
@@ -78,6 +104,93 @@
 }
 
 
+/*
+	*
+	*
+	* Popup for Cart
+	*
+	*
+*/
+
+.popup {
+	display: none;
+	position: relative;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	z-index: 332;
+	width: 80%;
+	max-width: 800px;
+	margin: auto;
+	border: 1px solid #007bff;
+}
+
+/* The actual popup */
+.popup .popuptext {
+	background-color: #17a2b8;
+	color: #fff;
+	text-align: center;
+	padding: 25px 10px;
+	display: block;
+	z-index: 1;
+	margin: auto;
+	border-radius: 2px;
+	-webkit-border-radius: 2px;
+	-moz-border-radius: 2px;
+	-ms-border-radius: 2px;
+	-o-border-radius: 2px;
+	font-size: large;
+}
+
+/* Popup cross */
+
+.popup .cross {
+	position: absolute;
+	right: 2px;
+	top: 1px;
+	padding: 4px 8px;
+	margin-bottom: 22px;
+	cursor: pointer;
+	border-radius: 6px;
+	color: #fff;
+	/* border: 1px solid rgb(168, 164, 164); */
+	z-index: 99999;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup.show {
+	display: block;
+	-webkit-animation: fadeIn 2s;
+	animation: fadeIn 2s;
+}
+
+.popup a {
+	color: var(--color-primary, #cc5500);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+
+	to {
+		opacity: 1;
+	}
+}
 
 
 /*
@@ -142,6 +255,7 @@ p,
 .theme-btn--primary.btn,
 .summary-title-link {
 	font-family: 'Overlock Regular' !important;
+	font-size: 20px;
 }
 
 h1,
@@ -149,15 +263,16 @@ h2,
 h3,
 h4 {
 	font-family: 'Overlock Regular', sans-serif !important;
+	font-weight: normal;
 	/* text-transform: uppercase; */
 }
 
 h1 {
-	font-size: 2rem;
+	font-size: 3rem !important;
 }
 
 h2 {
-	font-size: 1.5rem;
+	font-size: 2rem !important;
 }
 
 h3 {
@@ -181,13 +296,20 @@ h6 {
 	padding-bottom: 7px !important;
 }
 
-
 .container:not(.footer .container) {
 	width: 100% !important;
 	max-width: 1440px;
 	margin: 1.825rem auto !important;
 }
 
+.header .header-announcement-bar-wrapper {
+	display: none !important;
+	/* Hide SquareSpace nav */
+}
+
+.mt-3 {
+	margin-top: 1.665rem
+}
 
 /*
 	*
@@ -208,6 +330,7 @@ h6 {
 	flex-direction: row;
 	justify-content: space-between;
 	padding: 8px;
+	padding-bottom: 0;
 }
 
 .nav .nav-links {
@@ -227,13 +350,9 @@ h6 {
 }
 
 .nav a:hover:not(a.active:hover, a.btn.order, a.icon) {
-	background-color: #cc550034;
-	color: black;
-	border-radius: 6px;
-	-webkit-border-radius: 6px;
-	-moz-border-radius: 6px;
-	-ms-border-radius: 6px;
-	-o-border-radius: 6px;
+	/* background-color: #cc550034 !important; */
+	color: var(--color-primary, #cc5500);
+	font-weight: bold;
 }
 
 .nav a.active {
@@ -397,6 +516,7 @@ select::-ms-expand {
 .dropdown p {
 	/* font-style: italic; */
 	/* answer italic */
+	font-size: 18px !important;
 }
 
 .answer {
@@ -475,7 +595,7 @@ section.catering .catering-details {
 section.catering .catering-details,
 section.catering .catering-details .catering-description p,
 section.catering .catering-details .catering-description ul {
-	font-weight: bold;
+	font-weight: normal;
 	font-family: inherit;
 }
 
@@ -513,7 +633,7 @@ section.catering .btn.order,
 .nav .btn.order {
 	background-color: #CC5500;
 	color: #fff;
-	max-width: 100px;
+	max-width: 120px;
 	margin: auto 12px;
 }
 
@@ -538,7 +658,7 @@ footer.footer {
 	font-family: 'Overlock Regular' !important;
 	color: var(--color-white, #fff);
 	text-align: center;
-	padding: 3.225rem 1rem;
+	padding: 3.225rem 1rem .525rem;
 	font-family: inherit;
 	font-size: 16px;
 }
@@ -549,7 +669,6 @@ footer.footer a {
 	font-family: 'Overlock Regular' !important;
 	text-decoration: none;
 	color: var(--color-white, #fff);
-
 }
 
 .footer a.footer-link:hover {
@@ -568,7 +687,8 @@ footer.footer a {
 }
 
 .footer h5,
-.footer .footer-link-container .footer-link.instagram-link {
+.footer .footer-link-container .footer-link.instagram-link,
+.footer .footer-link-container .footer-link.credit-link {
 	font-family: 'Overlock Regular' !important;
 	font-size: inherit;
 }

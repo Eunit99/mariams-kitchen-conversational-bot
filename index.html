@@ -8,6 +8,7 @@
 
 		<title>Mariams Kitchen</title>
 		<link rel="stylesheet" href="css/styles.css">
+		<link rel="stylesheet" href="css/popup.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -23,7 +24,7 @@
 	<body>
 
 		<!-- Navbar -->
-		<nav class="nav responsive" id="nav">
+		<nav class="nav" id="nav">
 			<!-- logo area -->
 			<div class="nav-logo">
 				<a href="https://www.mariamskitchen.nyc/" class="active">Mariam's Kitchen</a>
@@ -32,10 +33,9 @@
 
 			<!-- nav-links -->
 			<div class="nav-links">
+				<a href="https://www.mariamskitchen.nyc">Home</a>
 				<a href="/menu">Menu</a>
-				<a href="https://www.mariamskitchen.nyc#about">Contact</a>
-				<a href="#about">About</a>
-				<a href="#contact">Contact</a>
+				<a href="#catering">Catering</a>
 				<a href="#about">About Us</a>
 				<a href="#faqs">FAQs</a>
 				<a href="/cart">Cart</a>
@@ -48,6 +48,16 @@
 
 		</nav>
 		<!-- /Navbar -->
+
+		<!-- Popup -->
+		<div class="popup" id="popup">
+			<span class="cross" id="cross" title="Close">x</span>
+			<span class="popuptext">
+				<span class="b">NOTE:</span> <span id="popupText">
+				</span>
+			</span>
+		</div>
+		<!-- /Popup -->
 
 
 		<!-- Catering section -->
@@ -108,7 +118,7 @@
 
 
 		<!-- FAQs -->
-		<div class="container">
+		<div class="container" id="faqs">
 			<div class="row">
 				<div class="col-12 col-xs-12 col-sm-4 col-md-4">
 					<!-- First column -->
@@ -233,19 +243,25 @@
 								<a href="https://www.mariamskitchen.nyc/" class="footer-link">Home</a>
 								<a href="/menu" class="footer-link">Menu</a>
 								<a href="/contact-us" class="footer-link">Contact Us</a>
-								<a href="about" class="footer-link">About Us</a>
-								<a href="faqs" class="footer-link">FAQs</a>
+								<a href="#about" class="footer-link">About Us</a>
+								<a href="#faqs" class="footer-link">FAQs</a>
 								<a href="/menu" class="footer-link">Order Now</a>
 							</div>
 						</div>
 					</div>
 
-					<div class="container ooter-link-container">
+					<div class="container footer-link-container">
 						<div class="row">
 							<div class="col-xs-12">
-								<a href="https://www.instagram.com/miriamskitchen/" class="footer-link instagram-link ">
+								<a href="https://www.instagram.com/miriamskitchen/" class="footer-link instagram-link">
 									Follow us on Instagram
 									<i class="fa fa-instagram"></i>
+								</a>
+							</div>
+
+							<div class="col-xs-12 mt-3">
+								Developed with love by <a target="_blank" href="https://bacfinc.com/?utm_source=Mariams+Kitchen"
+									class="footer-link credit-link">BACF Inc.
 								</a>
 							</div>
 						</div>
