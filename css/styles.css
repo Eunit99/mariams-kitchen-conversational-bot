@@ -6,6 +6,7 @@
 * Utilities
 * Custom fonts imports
 * Popup for Cart
+* Timed popup for newsletter
 * Mobile Menu Text
 * Custom modifications
 * Tweak for the select
@@ -58,6 +59,11 @@ i {
 .u,
 u {
 	text-decoration: underline;
+}
+
+.btn {
+	outline: 0;
+	border: none;
 }
 
 /*
@@ -190,6 +196,97 @@ u {
 	to {
 		opacity: 1;
 	}
+}
+
+
+
+/*
+	*
+	*
+	* Timed Popup for Newsletter
+	*
+	*
+*/
+
+.timed-popup {
+	display: block;
+	width: 90vw;
+	max-width: 720px;
+	margin: 1rem auto;
+	text-align: center;
+}
+
+.timed-popup .patterned {
+	width: 100%;
+	height: 35px;
+	max-height: 35px;
+	background-image: url(../img/assets/patterns.png);
+	background-repeat: no-repeat;
+}
+
+.timed-popup .content {
+	width: 100%;
+	margin: 2rem auto;
+}
+
+.timed-popup .discount {
+	font-family: "Moonrising", sans-serif;
+	color: var(--color-primary, #cc5500);
+	font-size: 2rem;
+	margin: 1rem auto;
+}
+
+.timed-popup .form-container {
+	margin-top: 1rem;
+}
+
+.timed-popup .form-container input {
+	width: 90%;
+	max-width: 500px;
+	padding: 16px 12px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	-ms-border-radius: 4px;
+	-o-border-radius: 4px;
+	border-radius: 4px;
+	outline: 0;
+	border: 1px solid var(--color-tertiary, #817382);
+	font-size: 1rem;
+	margin: 3rem auto;
+}
+
+.timed-popup .cta-btn-container {
+	margin-bottom: 1.625rem
+}
+
+.btn-off {
+	background-color: var(--color-primary, #cc5500);
+	color: #fff;
+}
+
+.btn-close {
+	color: var(--color-tertiary, #817382);
+	font-weight: 700;
+	text-decoration: none;
+}
+
+.btn-off,
+.btn-close {
+	margin: auto 12px;
+	font-family: "Overlock Regular", sans-serif;
+	font-style: normal;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 20px;
+	border: 1px solid transparent;
+	-webkit-border-radius: 6px;
+	-moz-border-radius: 6px;
+	-ms-border-radius: 6px;
+	-o-border-radius: 6px;
+	border-radius: 6px;
+	margin: auto;
+	padding: 10px;
+	text-transform: uppercase;
 }
 
 

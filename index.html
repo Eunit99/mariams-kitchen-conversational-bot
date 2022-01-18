@@ -40,7 +40,7 @@
 				<a href="#faqs">FAQs</a>
 				<a href="/cart">Cart</a>
 				<a href="/menu" class="btn order">Order Now</a>
-				<a href="javascript:void(0);" class="icon" onclick="toggleNav()">
+				<a href="javascript:void(0);" class="icon" onclick="toggleNav()" title="Toggle nav">
 					<i class="fa fa-bars"></i>
 				</a>
 			</div>
@@ -59,6 +59,45 @@
 		</div>
 		<!-- /Popup -->
 
+
+		<!-- Timed popup -->
+		<div class="timed-popup" id="timed-popup">
+			<div class="patterned"></div>
+			<div class="content">
+				<p class="head">
+					FIRST TIME HERE?
+				</p>
+
+				<div class="discount">
+					GET 15% OFF NOW
+				</div>
+				<p class="sub-head">
+					You can receive 15% off your first order when you shop online and use this offer.
+				</p>
+
+				<div class="form-container">
+					<form action="">
+						<!-- <label for="html">Email address</label> -->
+						<input type="email" id="timed-poup-email" class="form-control" placeholder="Enter your email address">
+					</form>
+
+					<!-- CTA btn container -->
+					<div class="cta-btn-container">
+
+						<a href="/order-now" onclick="close();" class="btn-close">no thanks</a>
+						<button class="btn btn-off">
+							Get my 15% off
+						</button>
+
+					</div>
+				</div>
+
+
+				<div class="patterned"></div>
+			</div>
+		</div>
+
+		<!-- /Timed popup -->
 
 		<!-- Catering section -->
 		<section class="catering" id="catering">
@@ -104,7 +143,8 @@
 							<!-- CTA btn container -->
 							<div class="cta-btn-container">
 								<a href="/order-now" onclick="" class="btn order">Order Catering</a>
-								<a href="/s/Mariams-Kitchen-menu-1.pdf" class="btn menu-pdf" title="Download Menu PDF">Download Menu</a>
+								<a href="/s/Mariams-Kitchen-menu-1.pdf" class="btn menu-pdf" title="Download Menu PDF">Download
+									Menu</a>
 							</div>
 							<!-- /CTA btn container -->
 
@@ -167,7 +207,8 @@
 					<div class="dropdown">
 						<h3>Do you cater?</h3>
 						<div class="answer">
-							<p>Yes! We do weddings, parties, and private events. The minimum for a catering order is $250. Email us at
+							<p>Yes! We do weddings, parties, and private events. The minimum for a catering order is $250. Email us
+								at
 								<a href="mailto:eat@mariamskitchen.nyc">eat@mariamskitchen.nyc</a> to place your order.
 							</p>
 						</div>
