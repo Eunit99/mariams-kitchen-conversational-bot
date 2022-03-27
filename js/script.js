@@ -178,6 +178,7 @@ const hideTimedPopupForFirstVisitor = (e) => {
 	hideTimedPopup.addEventListener("click", function (e) {
 		e.preventDefault();
 		popupContainer.classList.add("displayNone");
+		removeOverlay();
 	});
 
 };
@@ -217,4 +218,9 @@ const validationResult = (text, className, borderColor) => {
 const addOverlay = () => {
 	const timedPopupOverlay = document.getElementById("timedPopupOverlay");
 	timedPopupOverlay.classList.add("timed-popup-overlay");
+};
+
+const removeOverlay = () => {
+	const timedPopupOverlay = document.getElementById("timedPopupOverlay");
+	timedPopupOverlay.classList.remove("timed-popup-overlay");
 };
