@@ -78,18 +78,23 @@
 				<form action="">
 					<div class="form-container">
 						<!-- <label for="html">Email address</label> -->
-						<input type="email" id="timed-popup-email" class="form-control" placeholder="Enter your email address"
-							onchange="timePopup();">
+						<input type="email" id="timePopupEmailAddress" class="form-control" placeholder="Enter your email address"
+							onchange="validateTimePopupEmailAddress();">
+
+						<!-- validationResult -->
+						<div id="validationResult" class="validationResult"></div>
+						<!-- /validationResult -->
+
 
 						<!-- CTA btn container -->
 						<div class="cta-btn-container">
-
 							<a id="hideTimedPopup" class="btn-close">no thanks</a>
-							<button type="button" role="button" class="btn btn-off">
+							<button onclick="return validateTimePopupEmailAddress();" type="submit" role="button" class="btn btn-off">
 								Get my 15% off
 							</button>
-
 						</div>
+						<!-- /CTA btn container -->
+
 					</div>
 				</form>
 
@@ -322,7 +327,7 @@
 		<!-- Place this part in the code injection part of the website in the footer -->
 		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
 			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-		</script>
+			</script>
 		<script src="js/script.js"></script>
 	</body>
 

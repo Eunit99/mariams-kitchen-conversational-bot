@@ -159,7 +159,8 @@ let stateCheck = setInterval(() => {
 const timedPopupForFirstVisitor = () => {
 	setTimeout(() => {
 		showTimedPopupForFirstVisitor();
-	}, 5000); // display the timed popup after 5s
+
+	}, 10); // display the timed popup after 5s
 };
 
 const showTimedPopupForFirstVisitor = () => {
@@ -181,4 +182,34 @@ const hideTimedPopupForFirstVisitor = (e) => {
 
 };
 
+// validate email address
+const validateTimePopupEmailAddress = () => {
+	var timePopupEmailAddressValue = document.getElementById("timePopupEmailAddress").value;
+	let regexEmail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+	const timePopupEmailAddress = document.getElementById("timePopupEmailAddress");
+
+	if (timePopupEmailAddressValue === "") {
+		console.log("Please input your email address.");
+		validationResult("Please input your email address.", "error", "#d9534f");
+		return false;
+	} else if (timePopupEmailAddressValue.match(regexEmail)) {
+		console.log("Email submitted successfully");
+		validationResult("Email submitted successfully", "success", "#5cb85c");
+		return true;
+	} else {
+		console.log("Invalid email address.");
+		validationResult("Invalid email address.", "error", "#d9534f");
+		return false;
+	}
+
+};
+
 timedPopupForFirstVisitor();
+
+const validationResult = (text, className, borderColor) => {
+	const validationResultContainer = document.getElementById("validationResult");
+
+	validationResultContainer.innerText = `${text}`;
+	validationResultContainer.classList.add(`${className}`);
+	timePopupEmailAddress.style.borderColor = `${borderColor}`;
+};
