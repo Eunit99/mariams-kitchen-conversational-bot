@@ -20,8 +20,6 @@
 * =========================
 */
 
-
-
 /*
 	*
 	*
@@ -37,7 +35,6 @@
 	--footer-bg: #3C3025;
 }
 
-
 /*
 	*
 	*
@@ -46,24 +43,25 @@
 	*
 */
 
-.b,
-b {
+.b, b {
 	font-weight: 700;
 }
 
-.i,
-i {
+.i, i {
 	font-style: italic;
 }
 
-.u,
-u {
+.u, u {
 	text-decoration: underline;
 }
 
 .btn {
 	outline: 0;
 	border: none;
+}
+
+.displayNone {
+	display: none !important;
 }
 
 /*
@@ -109,7 +107,6 @@ u {
 	src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b63d9d8b6886e92633cb2/1632330713704/Overlock-Regular.ttf);
 }
 
-
 /*
 	*
 	*
@@ -133,6 +130,7 @@ u {
 }
 
 /* The actual popup */
+
 .popup .popuptext {
 	background-color: #17a2b8;
 	color: #fff;
@@ -165,6 +163,7 @@ u {
 }
 
 /* Toggle this class - hide and show the popup */
+
 .popup.show {
 	display: block;
 	-webkit-animation: fadeIn 2s;
@@ -178,11 +177,11 @@ u {
 }
 
 /* Add animation (fade in the popup) */
+
 @-webkit-keyframes fadeIn {
 	from {
 		opacity: 0;
 	}
-
 	to {
 		opacity: 1;
 	}
@@ -192,13 +191,10 @@ u {
 	from {
 		opacity: 0;
 	}
-
 	to {
 		opacity: 1;
 	}
 }
-
-
 
 /*
 	*
@@ -270,8 +266,7 @@ u {
 	text-decoration: none;
 }
 
-.btn-off,
-.btn-close {
+.btn-off, .btn-close {
 	margin: auto 12px;
 	font-family: "Overlock Regular", sans-serif;
 	font-style: normal;
@@ -288,7 +283,6 @@ u {
 	padding: 10px;
 	text-transform: uppercase;
 }
-
 
 /*
 	*
@@ -317,11 +311,11 @@ u {
 }
 
 /* 2 columns form */
+
 @media screen and (min-width:768px) {
 	div#block-yui_3_17_2_1_1599054401120_5664 .form-wrapper .field-list {
 		column-count: 2;
 	}
-
 	div#block-yui_3_17_2_1_1599054401120_5664 .form-wrapper .field-list .email:after {
 		content: "";
 		display: block;
@@ -337,28 +331,18 @@ u {
 	*
 */
 
-html,
-body {
+html, body {
 	margin: 0 !important;
 	padding: 0 !important;
 	overflow: auto;
 }
 
-body,
-button,
-p,
-.btn,
-.btn.btn--border,
-.theme-btn--primary.btn,
-.summary-title-link {
+body, button, p, .btn, .btn.btn--border, .theme-btn--primary.btn, .summary-title-link {
 	font-family: 'Overlock Regular' !important;
 	font-size: 20px;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1, h2, h3, h4 {
 	font-family: 'Overlock Regular', sans-serif !important;
 	font-weight: normal;
 	/* text-transform: uppercase; */
@@ -416,7 +400,6 @@ h6 {
 	*
 */
 
-
 .nav {
 	overflow: hidden;
 	background-color: var(--color-white, #fff);
@@ -466,44 +449,36 @@ h6 {
 }
 
 @media screen and (max-width: 600px) {
-
 	.nav {
 		flex-direction: column;
 		justify-content: flex-end;
 	}
-
 	.nav .nav-links a:not(.nav .nav-links a.icon) {
 		display: none;
 	}
-
 	.nav a.icon {
 		float: right;
 		display: block;
 	}
-
 	.nav.responsive .nav-links {
 		display: flex;
 		flex-direction: column;
 		justify-content: start;
 	}
-
 	.nav.responsive {
 		position: relative;
 	}
-
 	.nav.responsive .icon {
 		position: absolute;
 		right: 0;
 		top: 0;
 	}
-
 	.nav.responsive .nav-links a:not(.nav.responsive .nav-links a.icon) {
 		display: block;
 		float: none;
 		text-align: left;
 	}
 }
-
 
 /*
 	*
@@ -520,7 +495,6 @@ select {
 	appearance: none !important;
 	background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAASklEQVQ4jWNgGAUMynKKqcryCv+U5RX+k4j/Kcsp5pJrCEIzGS7B1EyCIbg1E2EIYc14DCFeMxZDSNcMAyry8tkq8vLZZGkeQQAArA1Z34fbHooAAAAASUVORK5CYII=) 96% / 15% no-repeat #EEE !important;
 	/* Tweak ends */
-
 	width: 100% !important;
 	padding: 12px !important;
 	margin: 6px 0 4px !important;
@@ -534,16 +508,12 @@ select {
 	border-radius: 2px !important;
 }
 
-
 /* CAUTION: Internet Explorer hackery ahead */
-
 
 select::-ms-expand {
 	display: none;
 	/* Remove default arrow in Internet Explorer 10 and 11 */
 }
-
-
 
 /*
 	*
@@ -564,7 +534,6 @@ select::-ms-expand {
 	padding-right: 2vw;
 	pointer-events: auto;
 }
-
 
 /*
 	*
@@ -634,8 +603,6 @@ select::-ms-expand {
 	float: right;
 }
 
-
-
 /*
 	*
 	*
@@ -643,6 +610,7 @@ select::-ms-expand {
 	*
 	*
 */
+
 .summary-excerpt p {
 	font-size: 16px !important;
 	text-align: justify !important;
@@ -658,7 +626,6 @@ select::-ms-expand {
 	margin-top: 6%;
 	text-align: justify !important;
 }
-
 
 /*
 	*
@@ -689,9 +656,7 @@ section.catering .catering-details {
 	font-weight: bold;
 }
 
-section.catering .catering-details,
-section.catering .catering-details .catering-description p,
-section.catering .catering-details .catering-description ul {
+section.catering .catering-details, section.catering .catering-details .catering-description p, section.catering .catering-details .catering-description ul {
 	font-weight: normal;
 	font-family: inherit;
 }
@@ -704,8 +669,7 @@ section.catering .cta-btn-container {
 	margin-top: 1.825rem;
 }
 
-section.catering .btn,
-.nav .btn {
+section.catering .btn, .nav .btn {
 	font-family: "Overlock Regular", sans-serif;
 	font-style: normal;
 	font-weight: 500;
@@ -721,13 +685,11 @@ section.catering .btn,
 	padding: 10px;
 }
 
-section.catering a.btn,
-.nav a.btn {
+section.catering a.btn, .nav a.btn {
 	text-decoration: none;
 }
 
-section.catering .btn.order,
-.nav .btn.order {
+section.catering .btn.order, .nav .btn.order {
 	background-color: #CC5500;
 	color: #fff;
 	max-width: 120px;
@@ -739,8 +701,6 @@ section.catering .btn.menu-pdf {
 	background-color: #fff;
 	border: 1px solid #CC5500;
 }
-
-
 
 /*
 	*
@@ -760,9 +720,7 @@ footer.footer {
 	font-size: 16px;
 }
 
-footer.footer a:link,
-footer.footer a:active,
-footer.footer a {
+footer.footer a:link, footer.footer a:active, footer.footer a {
 	font-family: 'Overlock Regular' !important;
 	text-decoration: none;
 	color: var(--color-white, #fff);
@@ -783,13 +741,10 @@ footer.footer a {
 	margin: auto 14px;
 }
 
-.footer h5,
-.footer .footer-link-container .footer-link.instagram-link,
-.footer .footer-link-container .footer-link.credit-link {
+.footer h5, .footer .footer-link-container .footer-link.instagram-link, .footer .footer-link-container .footer-link.credit-link {
 	font-family: 'Overlock Regular' !important;
 	font-size: inherit;
 }
-
 
 /*
 	*
@@ -799,12 +754,8 @@ footer.footer a {
 	*
 */
 
-
 @media screen and (max-width: 768px) {
-
-	.footer .col,
-	.footer .col,
-	.footer .col {
+	.footer .col, .footer .col, .footer .col {
 		margin: 6px auto;
 	}
 }

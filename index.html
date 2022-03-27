@@ -8,7 +8,6 @@
 
 		<title>Mariams Kitchen</title>
 		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="css/popup.css">
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
@@ -61,7 +60,7 @@
 
 
 		<!-- Timed popup -->
-		<div class="timed-popup" id="timed-popup">
+		<div class="timed-popup displayNone" id="timed-popup">
 			<div class="patterned"></div>
 			<div class="content">
 				<p class="head">
@@ -85,7 +84,7 @@
 						<!-- CTA btn container -->
 						<div class="cta-btn-container">
 
-							<a href="/order-now" onclick="close();" class="btn-close">no thanks</a>
+							<a id="hideTimedPopup" class="btn-close">no thanks</a>
 							<button type="button" role="button" class="btn btn-off">
 								Get my 15% off
 							</button>

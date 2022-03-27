@@ -104,7 +104,7 @@ let stateCheck = setInterval(() => {
 			showPopup();
 			togglePopup();
 		} else {
-			console.error(`Error! Can't display cart popup. Pathname ${pathname} doesn't match with /cart`)
+			console.error(`Error! Can't display cart popup. Pathname ${pathname} doesn't match with /cart`);
 		}
 
 
@@ -116,7 +116,7 @@ let stateCheck = setInterval(() => {
 			showPopup();
 			togglePopup();
 		} else {
-			console.error(`Error! Can't display menu popup. Pathname ${pathname} doesn't match with /menu`)
+			console.error(`Error! Can't display menu popup. Pathname ${pathname} doesn't match with /menu`);
 		}
 
 
@@ -130,7 +130,7 @@ let stateCheck = setInterval(() => {
 			showPopup();
 			togglePopup();
 		} else {
-			console.error(`Error! Can't display checkout popup. Pathname ${pathname} doesn't match with /checkout`)
+			console.error(`Error! Can't display checkout popup. Pathname ${pathname} doesn't match with /checkout`);
 		}
 
 
@@ -143,8 +143,42 @@ let stateCheck = setInterval(() => {
 			showPopup();
 			togglePopup();
 		} else {
-			console.error(`Error! Can't display order-now popup. Pathname ${pathname} doesn't match with /order-now`)
+			console.error(`Error! Can't display order-now popup. Pathname ${pathname} doesn't match with /order-now`);
 		}
 
-	};
+	}
 }, 100);
+
+
+/**
+ *
+ * Timed popup
+ *
+ */
+
+const timedPopupForFirstVisitor = () => {
+	setTimeout(() => {
+		showTimedPopupForFirstVisitor();
+	}, 5000); // display the timed popup after 5s
+};
+
+const showTimedPopupForFirstVisitor = () => {
+	const popupContainer = document.querySelector("#timed-popup");
+	popupContainer.classList.remove("displayNone");
+
+	hideTimedPopupForFirstVisitor();
+};
+
+
+const hideTimedPopupForFirstVisitor = (e) => {
+	const hideTimedPopup = document.getElementById("hideTimedPopup");
+	const popupContainer = document.querySelector("#timed-popup");
+
+	hideTimedPopup.addEventListener("click", function (e) {
+		e.preventDefault();
+		popupContainer.classList.add("displayNone");
+	});
+
+};
+
+timedPopupForFirstVisitor();
