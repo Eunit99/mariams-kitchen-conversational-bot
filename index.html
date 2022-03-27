@@ -60,46 +60,49 @@
 
 
 		<!-- Timed popup -->
-		<div class="timed-popup displayNone" id="timed-popup">
-			<div class="patterned"></div>
-			<div class="content">
-				<p class="head">
-					FIRST TIME HERE?
-				</p>
-
-				<div class="discount">
-					GET 15% OFF NOW
-				</div>
-				<p class="sub-head">
-					You can receive 15% off your first order when you shop online and use this offer.
-				</p>
-
-
-				<form action="">
-					<div class="form-container">
-						<!-- <label for="html">Email address</label> -->
-						<input type="email" id="timePopupEmailAddress" class="form-control" placeholder="Enter your email address"
-							onchange="validateTimePopupEmailAddress();">
-
-						<!-- validationResult -->
-						<div id="validationResult" class="validationResult"></div>
-						<!-- /validationResult -->
-
-
-						<!-- CTA btn container -->
-						<div class="cta-btn-container">
-							<a id="hideTimedPopup" class="btn-close">no thanks</a>
-							<button onclick="return validateTimePopupEmailAddress();" type="submit" role="button" class="btn btn-off">
-								Get my 15% off
-							</button>
-						</div>
-						<!-- /CTA btn container -->
-
-					</div>
-				</form>
-
-
+		<div id="timedPopupOverlay" class="">
+			<div class="timed-popup displayNone" id="timed-popup">
 				<div class="patterned"></div>
+				<div class="content">
+					<p class="head">
+						FIRST TIME HERE?
+					</p>
+
+					<div class="discount">
+						GET 15% OFF NOW
+					</div>
+					<p class="sub-head">
+						You can receive 15% off your first order when you shop online and use this offer.
+					</p>
+
+
+					<form action="">
+						<div class="form-container">
+							<!-- <label for="html">Email address</label> -->
+							<input type="email" id="timePopupEmailAddress" class="form-control" placeholder="Enter your email address"
+								onchange="validateTimePopupEmailAddress();">
+
+							<!-- validationResult -->
+							<div id="validationResult" class="validationResult"></div>
+							<!-- /validationResult -->
+
+
+							<!-- CTA btn container -->
+							<div class="cta-btn-container">
+								<a id="hideTimedPopup" class="btn-close">no thanks</a>
+								<button onclick="return validateTimePopupEmailAddress();" type="submit" role="button"
+									class="btn btn-off">
+									Get my 15% off
+								</button>
+							</div>
+							<!-- /CTA btn container -->
+
+						</div>
+					</form>
+
+
+					<div class="patterned"></div>
+				</div>
 			</div>
 		</div>
 

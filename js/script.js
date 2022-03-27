@@ -159,7 +159,7 @@ let stateCheck = setInterval(() => {
 const timedPopupForFirstVisitor = () => {
 	setTimeout(() => {
 		showTimedPopupForFirstVisitor();
-
+		addOverlay();
 	}, 5000); // display the timed popup after 5s
 };
 
@@ -212,4 +212,9 @@ const validationResult = (text, className, borderColor) => {
 	validationResultContainer.innerText = `${text}`;
 	validationResultContainer.classList.add(`${className}`);
 	timePopupEmailAddress.style.borderColor = `${borderColor}`;
+};
+
+const addOverlay = () => {
+	const timedPopupOverlay = document.getElementById("timedPopupOverlay");
+	timedPopupOverlay.classList.add("timed-popup-overlay");
 };
