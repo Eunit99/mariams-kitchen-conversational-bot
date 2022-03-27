@@ -160,7 +160,7 @@ const timedPopupForFirstVisitor = () => {
 	setTimeout(() => {
 		showTimedPopupForFirstVisitor();
 
-	}, 10); // display the timed popup after 5s
+	}, 5000); // display the timed popup after 5s
 };
 
 const showTimedPopupForFirstVisitor = () => {
