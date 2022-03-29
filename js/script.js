@@ -101,8 +101,11 @@ let stateCheck = setInterval(() => {
 
 			// if pathname matches 'cart'
 			popupText.innerHTML = cartText;
-			showPopup();
-			togglePopup();
+
+			// Uncomment below to display the text "All rates are subject to change"
+
+			// showPopup();
+			// togglePopup();
 		} else {
 			console.error(`Error! Can't display cart popup. Pathname ${pathname} doesn't match with /cart`);
 		}

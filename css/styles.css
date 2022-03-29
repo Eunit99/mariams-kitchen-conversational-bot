@@ -207,7 +207,7 @@
 .timed-popup {
 	position: relative;
 	left: 0%;
-	top: 10%;
+	top: 0%;
 	display: block;
 	width: 90vw;
 	max-width: 720px;
@@ -243,7 +243,7 @@
 }
 
 .timed-popup .form-container input {
-	width: 90%;
+	width: 85%;
 	max-width: 500px;
 	padding: 16px 12px;
 	-webkit-border-radius: 4px;
@@ -675,6 +675,7 @@ select::-ms-expand {
 section.catering {
 	color: #3C3025;
 	font-family: "Overlock Regular", sans-serif;
+	margin-top: -470px;
 }
 
 section.catering .profile-img {
