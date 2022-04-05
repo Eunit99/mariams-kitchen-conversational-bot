@@ -161,8 +161,14 @@ let stateCheck = setInterval(() => {
 
 const timedPopupForFirstVisitor = () => {
 	setTimeout(() => {
-		showTimedPopupForFirstVisitor();
-		addOverlay();
+
+		// Uncomment below to display the newsletter popup
+		
+		/* showTimedPopupForFirstVisitor();
+		addOverlay(); */
+
+		// Uncomment above to display the newsletter popup
+
 	}, 5000); // display the timed popup after 5s
 };
 
