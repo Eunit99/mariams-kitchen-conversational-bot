@@ -101,8 +101,11 @@ let stateCheck = setInterval(() => {
 
 			// if pathname matches 'cart'
 			popupText.innerHTML = cartText;
-			showPopup();
-			togglePopup();
+
+			// Uncomment below to display the text "All rates are subject to change"
+
+			// showPopup();
+			// togglePopup();
 		} else {
 			console.error(`Error! Can't display cart popup. Pathname ${pathname} doesn't match with /cart`);
 		}
@@ -158,8 +161,14 @@ let stateCheck = setInterval(() => {
 
 const timedPopupForFirstVisitor = () => {
 	setTimeout(() => {
-		showTimedPopupForFirstVisitor();
-		addOverlay();
+
+		// Uncomment below to display the newsletter popup
+		
+		/* showTimedPopupForFirstVisitor();
+		addOverlay(); */
+
+		// Uncomment above to display the newsletter popup
+
 	}, 5000); // display the timed popup after 5s
 };
 
