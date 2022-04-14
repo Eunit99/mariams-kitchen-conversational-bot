@@ -116,8 +116,11 @@ let stateCheck = setInterval(() => {
 
 			// if pathname matches 'menu'
 			popupText.innerHTML = menuText;
-			showPopup();
-			togglePopup();
+
+			// Uncomment below to display the text "All rates are subject to change"
+
+			// showPopup();
+			// togglePopup();
 		} else {
 			console.error(`Error! Can't display menu popup. Pathname ${pathname} doesn't match with /menu`);
 		}
