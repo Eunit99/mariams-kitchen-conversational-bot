@@ -31,6 +31,7 @@
 // 		};
 // }(window, document);
 
+
 // FAQs
 $(".dropdown h3").click(function () {
 	$(this).nextUntil("h3").slideToggle("slow");
@@ -87,6 +88,7 @@ let stateCheck = setInterval(() => {
 
 		let popupText = document.getElementById("popupText"),
 			menuText = "All rates are subject to change at anytime!",
+			overBookedText = "We are booked until May 1st. Please fill out a <a href='/order-now'>catering form</a> for other enquiries.",
 			cartText = "All rates are subject to change at anytime!",
 			checkoutText = "Your order will be ready on or before 4 days time.",
 			orderNowText = "Click <a target='_blank' href='https://calendly.com/mknyc/15min'>here</a> to view the earliest possible day for delivery.";
@@ -150,6 +152,18 @@ let stateCheck = setInterval(() => {
 			togglePopup();
 		} else {
 			console.error(`Error! Can't display order-now popup. Pathname ${pathname} doesn't match with /order-now`);
+		}
+
+		// Match pathname with /
+		if (pathname === "/") {
+
+			// if pathname matches '/'
+			popupText.innerHTML = overBookedText;
+
+			showPopup();
+			togglePopup();
+		} else {
+			console.error(`Error! Can't display order-now popup. Pathname ${pathname} doesn't match with /`);
 		}
 
 	}
