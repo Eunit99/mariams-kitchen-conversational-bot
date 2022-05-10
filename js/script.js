@@ -162,8 +162,8 @@ let stateCheck = setInterval(() => {
 			// if pathname matches '/'
 			// popupText.innerHTML = overBookedText;
 
-			showPopup();
-			togglePopup();
+			// showPopup();
+			// togglePopup();
 		} else {
 			console.error(`Error! Can't display order-now popup. Pathname ${pathname} doesn't match with /`);
 		}
