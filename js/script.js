@@ -84,7 +84,6 @@ function timePopup() {
 let stateCheck = setInterval(() => {
 	if (document.readyState === "complete") {
 		clearInterval(stateCheck);
-		// console.log("Document is ready");
 
 		let popupText = document.getElementById("popupText"),
 			menuText = "All rates are subject to change at anytime!",
@@ -157,8 +156,11 @@ let stateCheck = setInterval(() => {
 		// Match pathname with /
 		if (pathname === "/") {
 
+			
+			// Uncomment below to display the text "We are booked until May 1st"
+			
 			// if pathname matches '/'
-			popupText.innerHTML = overBookedText;
+			// popupText.innerHTML = overBookedText;
 
 			showPopup();
 			togglePopup();
