@@ -252,3 +252,5 @@ const removeOverlay = () => {
   const timedPopupOverlay = document.getElementById("timedPopupOverlay");
   timedPopupOverlay.classList.remove("timed-popup-overlay");
 };
+
+console.info("Ξunit");
