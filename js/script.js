@@ -134,8 +134,8 @@ let stateCheck = setInterval(() => {
       popupText.innerHTML = checkoutText;
       // console.log(search);
 
-      showPopup();
-      togglePopup();
+      // showPopup();
+      // togglePopup();
     } else {
       console.error(`Error! Can't display checkout popup. Pathname ${pathname} doesn't match with /checkout`);
     }
@@ -147,8 +147,8 @@ let stateCheck = setInterval(() => {
       // if pathname matches 'order-now'
       popupText.innerHTML = orderNowText;
 
-      showPopup();
-      togglePopup();
+      // showPopup();
+      // togglePopup();
     } else {
       console.error(`Error! Can't display order-now popup. Pathname ${pathname} doesn't match with /order-now`);
     }
@@ -162,8 +162,8 @@ let stateCheck = setInterval(() => {
       // if pathname matches '/'
       popupText.innerHTML = overBookedText;
 
-      showPopup(); // display popupText
-      togglePopup(); // toggle popupText
+     // showPopup();
+      // togglePopup();
     } else {
       console.error(`Error! Can't display order-now popup. Pathname ${pathname} doesn't match with /`);
     }

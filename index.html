@@ -1,334 +1,342 @@
 <!DOCTYPE html>
 <html lang="en">
 
-	<head>
-		<meta charset="UTF-8">
-		<meta http-equiv="X-UA-Compatible" content="IE=edge">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>Mariams Kitchen</title>
-		<link rel="stylesheet" href="css/styles.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-
-		<!-- Code Injection -->
-		<!-- Place this in the header -->
-		<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
-	</head>
-
-	<body>
-
-		<!-- Navbar -->
-		<nav class="nav" id="nav">
-			<!-- logo area -->
-			<div class="nav-logo">
-				<a href="https://www.mariamskitchen.nyc/" class="active">Mariam's Kitchen</a>
-			</div>
-			<!-- /logo area -->
-
-			<!-- nav-links -->
-			<div class="nav-links">
-				<a href="https://www.mariamskitchen.nyc">Home</a>
-				<a href="/menu">Menu</a>
-				<a href="#catering">Catering</a>
-				<a href="#about">About Us</a>
-				<a href="#faqs">FAQs</a>
-				<a href="/cart">Cart</a>
-				<a href="/menu" class="btn order">Order Now</a>
-				<a href="javascript:void(0);" class="icon" onclick="toggleNav()" title="Toggle nav">
-					<i class="fa fa-bars"></i>
-				</a>
-			</div>
-			<!-- /nav-links -->
-
-		</nav>
-		<!-- /Navbar -->
-
-		<!-- Popup -->
-		<div class="popup" id="popup">
-			<span class="cross" id="cross" title="Close">x</span>
-			<span class="popuptext">
-				<span class="b">NOTE:</span> <span id="popupText">
-				</span>
-			</span>
-		</div>
-		<!-- /Popup -->
+    <title>Mariams Kitchen</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 
-		<!-- Timed popup -->
-		<div id="timedPopupOverlay" class="">
-			<div class="timed-popup displayNone" id="timed-popup">
-				<div class="patterned"></div>
-				<div class="content">
-					<p class="head">
-						FIRST TIME HERE?
-					</p>
+    <!-- Code Injection -->
+    <!-- Place this in the header -->
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+  </head>
 
-					<div class="discount">
-						GET 15% OFF NOW
-					</div>
-					<p class="sub-head">
-						You can receive 15% off your first order when you shop online and use this offer.
-					</p>
+  <body>
 
+    <!-- Navbar -->
+    <nav class="nav" id="nav">
+      <!-- logo area -->
+      <div class="nav-logo">
+        <a href="https://www.mariamskitchen.nyc/" class="active">Mariam's Kitchen</a>
 
-					<form action="">
-						<div class="form-container">
-							<!-- <label for="html">Email address</label> -->
-							<input type="email" id="timePopupEmailAddress" class="form-control" placeholder="Enter your email address"
-								onchange="validateTimePopupEmailAddress();">
+        <div class="cart">
+          <a href="/cart">
+            <i class="fa fa-shopping-cart"></i>
+            Cart
+          </a>
+        </div>
 
-							<!-- validationResult -->
-							<div id="validationResult" class="validationResult"></div>
-							<!-- /validationResult -->
+      </div>
+      <!-- /logo area -->
 
+      <!-- nav-links -->
+      <div class="nav-links">
+        <a href="https://www.mariamskitchen.nyc">Home</a>
+        <a href="/menu">Menu</a>
+        <a href="#catering">Catering</a>
+        <a href="#about">About Us</a>
+        <a href="#faqs">FAQs</a>
+        <a href="/cart">Cart</a>
+        <a href="/menu" class="btn order">Order Now</a>
+        <a href="javascript:void(0);" class="icon" onclick="toggleNav()" title="Toggle nav">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+      <!-- /nav-links -->
 
-							<!-- CTA btn container -->
-							<div class="cta-btn-container">
-								<a id="hideTimedPopup" class="btn-close">no thanks</a>
-								<button onclick="return validateTimePopupEmailAddress();" type="submit" role="button"
-									class="btn btn-off">
-									Get my 15% off
-								</button>
-							</div>
-							<!-- /CTA btn container -->
+    </nav>
+    <!-- /Navbar -->
 
-						</div>
-					</form>
-
-
-					<div class="patterned"></div>
-				</div>
-			</div>
-		</div>
-		<!-- /Timed popup -->
-
-		<!-- Catering section -->
-		<section class="catering" id="catering">
-			<div class="container">
-				<div class="row">
-					<!-- Profile img container -->
-					<div class="col-xs-12 col-sm-12 col-md-5 col-lg-6">
-						<div class="profile-img"></div>
-					</div>
-					<!-- /Profile img container -->
+    <!-- Popup -->
+    <div class="popup" id="popup">
+      <span class="cross" id="cross" title="Close">x</span>
+      <span class="popuptext">
+        <span class="b">NOTE:</span> <span id="popupText">
+        </span>
+      </span>
+    </div>
+    <!-- /Popup -->
 
 
-					<div class="col-xs-12 col-sm-12 col-md-7 col-lg-6">
-						<div class="catering-details">
+    <!-- Timed popup -->
+    <div id="timedPopupOverlay" class="">
+      <div class="timed-popup displayNone" id="timed-popup">
+        <div class="patterned"></div>
+        <div class="content">
+          <p class="head">
+            FIRST TIME HERE?
+          </p>
 
-							<p class="title">YES WE CATER</p>
-							<h1 class="title">
-								Book us for your next event. Everyone will remember what was on their plate.
-							</h1>
-							<div class="catering-description">
-								<p>We cater to:</p>
-								<div class="row">
-									<div class="col-xs-12 col-md-12 col-lg-6">
-										<ul>
-											<li>Baby Shower</li>
-											<li>Naming Ceremony</li>
-											<li>Wedding</li>
-											<li>Birthday/Graduation</li>
-										</ul>
-									</div>
-									<div class="col-xs-12 col-md-12 col-lg-6">
-										<ul>
-											<li>Brunch Party </li>
-											<li>Business/Product Launch</li>
-											<li>Religious Celebrations</li>
-										</ul>
-									</div>
-								</div>
-								<p>And so many more events. Reach out to us today.</p>
-							</div>
+          <div class="discount">
+            GET 15% OFF NOW
+          </div>
+          <p class="sub-head">
+            You can receive 15% off your first order when you shop online and use this offer.
+          </p>
 
 
-							<!-- CTA btn container -->
-							<div class="cta-btn-container">
-								<a href="/order-now" onclick="" class="btn order">Order Catering</a>
-								<a href="/s/Mariams-Kitchen-menu-1.pdf" class="btn menu-pdf" title="Download Menu PDF">Download
-									Menu</a>
-							</div>
-							<!-- /CTA btn container -->
+          <form action="">
+            <div class="form-container">
+              <!-- <label for="html">Email address</label> -->
+              <input type="email" id="timePopupEmailAddress" class="form-control" placeholder="Enter your email address"
+                onchange="validateTimePopupEmailAddress();">
 
-						</div>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- /Catering section -->
+              <!-- validationResult -->
+              <div id="validationResult" class="validationResult"></div>
+              <!-- /validationResult -->
 
 
+              <!-- CTA btn container -->
+              <div class="cta-btn-container">
+                <a id="hideTimedPopup" class="btn-close">no thanks</a>
+                <button onclick="return validateTimePopupEmailAddress();" type="submit" role="button"
+                  class="btn btn-off">
+                  Get my 15% off
+                </button>
+              </div>
+              <!-- /CTA btn container -->
 
-		<!-- FAQs -->
-		<div class="container" id="faqs">
-			<div class="row">
-				<div class="col-12 col-xs-12 col-sm-4 col-md-4">
-					<!-- First column -->
-					<div class="dropdown">
-						<h3>Where are you located?</h3>
-						<div class="answer">
-							<p>Mariam's Kitchen operates from Brooklyn, NY.</p>
-						</div>
-					</div>
+            </div>
+          </form>
 
-					<div class="dropdown">
-						<h3>Do you teach private cooking classes?</h3>
-						<div class="answer">
-							<p>Yes, kindly send us an email with your inquiry to <a
-									href="mailto:eat@mariamskitchen.nyc">eat@mariamskitchen.nyc</a></p>
-						</div>
-					</div>
 
-					<div class="dropdown">
-						<h3>How far do you deliver?</h3>
-						<div class="answer">
-							<p>No more than a 20-mile radius of the Barclays Center.</p>
-						</div>
-					</div>
-					<!-- /First column -->
-				</div>
+          <div class="patterned"></div>
+        </div>
+      </div>
+    </div>
+    <!-- /Timed popup -->
 
-				<div class="col-12 col-xs-12 col-sm-4 col-md-4">
-					<!-- Second column -->
-					<div class="dropdown">
-						<h3>Do you offer Vegetarian/Vegan options?</h3>
-						<div class="answer">
-							<p>Yes. We can customize your order based on your preferences. Kindly send us an email with a detailed
-								request.
-							</p>
-						</div>
-					</div>
+    <!-- Catering section -->
+    <section class="catering" id="catering">
+      <div class="container">
+        <div class="row">
+          <!-- Profile img container -->
+          <div class="col-xs-12 col-sm-12 col-md-5 col-lg-6">
+            <div class="profile-img"></div>
+          </div>
+          <!-- /Profile img container -->
 
-					<div class="dropdown">
-						<h3>What is your refund policy?</h3>
-						<div class="answer">
-							<p>Mariam’s Kitchen does not offer refunds.</p>
-						</div>
-					</div>
 
-					<div class="dropdown">
-						<h3>Do you cater?</h3>
-						<div class="answer">
-							<p>Yes! We do weddings, parties, and private events. The minimum for a catering order is $250. Email us
-								at
-								<a href="mailto:eat@mariamskitchen.nyc">eat@mariamskitchen.nyc</a> to place your order.
-							</p>
-						</div>
-					</div>
-					<!-- /Second column -->
-				</div>
+          <div class="col-xs-12 col-sm-12 col-md-7 col-lg-6">
+            <div class="catering-details">
 
-				<div class="col-12 col-xs-12 col-sm-4 col-md-4">
-					<!-- Third Column -->
-					<div class="dropdown">
-						<h3>
-							When can I place order for the weekend special?
-						</h3>
-						<div class="answer">
-							<p>Mondays 12pm – Wednesdays 11:59pm.</p>
-							<p>No exceptions.</p>
-						</div>
-					</div>
+              <p class="title">YES WE CATER</p>
+              <h1 class="title">
+                Book us for your next event. Everyone will remember what was on their plate.
+              </h1>
+              <div class="catering-description">
+                <p>We cater to:</p>
+                <div class="row">
+                  <div class="col-xs-12 col-md-12 col-lg-6">
+                    <ul>
+                      <li>Baby Shower</li>
+                      <li>Naming Ceremony</li>
+                      <li>Wedding</li>
+                      <li>Birthday/Graduation</li>
+                    </ul>
+                  </div>
+                  <div class="col-xs-12 col-md-12 col-lg-6">
+                    <ul>
+                      <li>Brunch Party </li>
+                      <li>Business/Product Launch</li>
+                      <li>Religious Celebrations</li>
+                    </ul>
+                  </div>
+                </div>
+                <p>And so many more events. Reach out to us today.</p>
+              </div>
 
-					<div class="dropdown">
-						<h3>
-							When can my weekend menu order be delivered/picked up?
-						</h3>
-						<div class="answer">
-							<p>Weekend menu orders are available for delivery/pick up between 5pm-8pm </p>
-						</div>
-					</div>
-					<!-- /Third Column -->
-				</div>
 
-			</div>
-		</div>
-		<!-- /FAQs -->
+              <!-- CTA btn container -->
+              <div class="cta-btn-container">
+                <a href="/order-now" onclick="" class="btn order">Order Catering</a>
+                <a href="/s/Mariams-Kitchen-menu-1.pdf" class="btn menu-pdf" title="Download Menu PDF">Download
+                  Menu</a>
+              </div>
+              <!-- /CTA btn container -->
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /Catering section -->
 
 
 
+    <!-- FAQs -->
+    <div class="container" id="faqs">
+      <div class="row">
+        <div class="col-12 col-xs-12 col-sm-4 col-md-4">
+          <!-- First column -->
+          <div class="dropdown">
+            <h3>Where are you located?</h3>
+            <div class="answer">
+              <p>Mariam's Kitchen operates from Brooklyn, NY.</p>
+            </div>
+          </div>
 
-		<!-- Footer -->
-		<footer class="footer" id="footer">
-			<div class="container">
-				<div class="row">
+          <div class="dropdown">
+            <h3>Do you teach private cooking classes?</h3>
+            <div class="answer">
+              <p>Yes, kindly send us an email with your inquiry to <a
+                  href="mailto:eat@mariamskitchen.nyc">eat@mariamskitchen.nyc</a></p>
+            </div>
+          </div>
 
-					<div class="col col-xs-12 col-sm-4 col-md-4">
+          <div class="dropdown">
+            <h3>How far do you deliver?</h3>
+            <div class="answer">
+              <p>No more than a 20-mile radius of the Barclays Center.</p>
+            </div>
+          </div>
+          <!-- /First column -->
+        </div>
 
-						<div class="location">
-							<i class="fa fa-map-marker"></i> LOCATION
-							<h5>Brooklyn, New York</h5>
-						</div>
-					</div>
+        <div class="col-12 col-xs-12 col-sm-4 col-md-4">
+          <!-- Second column -->
+          <div class="dropdown">
+            <h3>Do you offer Vegetarian/Vegan options?</h3>
+            <div class="answer">
+              <p>Yes. We can customize your order based on your preferences. Kindly send us an email with a detailed
+                request.
+              </p>
+            </div>
+          </div>
 
-					<div class="col col-xs-12 col-sm-4 col-md-4">
+          <div class="dropdown">
+            <h3>What is your refund policy?</h3>
+            <div class="answer">
+              <p>Mariam’s Kitchen does not offer refunds.</p>
+            </div>
+          </div>
 
-						<div class="call">
-							<i class="fa fa-phone"></i> CALL US AT
-							<h5><a href="tel:4752896039">475-289-6039</a> </h5>
+          <div class="dropdown">
+            <h3>Do you cater?</h3>
+            <div class="answer">
+              <p>Yes! We do weddings, parties, and private events. The minimum for a catering order is $250. Email us
+                at
+                <a href="mailto:eat@mariamskitchen.nyc">eat@mariamskitchen.nyc</a> to place your order.
+              </p>
+            </div>
+          </div>
+          <!-- /Second column -->
+        </div>
 
-						</div>
-					</div>
+        <div class="col-12 col-xs-12 col-sm-4 col-md-4">
+          <!-- Third Column -->
+          <div class="dropdown">
+            <h3>
+              When can I place order for the weekend special?
+            </h3>
+            <div class="answer">
+              <p>Mondays 12pm – Wednesdays 11:59pm.</p>
+              <p>No exceptions.</p>
+            </div>
+          </div>
 
-					<div class="col col-xs-12 col-sm-4 col-md-4">
+          <div class="dropdown">
+            <h3>
+              When can my weekend menu order be delivered/picked up?
+            </h3>
+            <div class="answer">
+              <p>Weekend menu orders are available for delivery/pick up between 5pm-8pm </p>
+            </div>
+          </div>
+          <!-- /Third Column -->
+        </div>
 
-						<div class="mail">
-							<i class="fa fa-envelope"></i> SEND US AN EMAIL
-							<h5><a href="mailto:eat@mariamskitchen.nyc">eat@mariamskitchen.nyc</a></h5>
-
-						</div>
-					</div>
-
-					<!-- Footer links -->
-					<div class="container footer-link-container">
-						<div class="row">
-							<div class="col col-xs-12">
-								<a href="https://www.mariamskitchen.nyc/" class="footer-link">Home</a>
-								<a href="/menu" class="footer-link">Menu</a>
-								<a href="/contact-us" class="footer-link">Contact Us</a>
-								<a href="#about" class="footer-link">About Us</a>
-								<a href="#faqs" class="footer-link">FAQs</a>
-								<a href="/menu" class="footer-link">Order Now</a>
-							</div>
-						</div>
-					</div>
-
-					<div class="container footer-link-container">
-						<div class="row">
-							<div class="col-xs-12">
-								<a href="https://www.instagram.com/miriamskitchen/" class="footer-link instagram-link">
-									Follow us on Instagram
-									<i class="fa fa-instagram"></i>
-								</a>
-							</div>
-
-							<div class="col-xs-12 mt-3">
-								Developed with love by <a target="_blank" href="https://bacfinc.com/?utm_source=Mariams+Kitchen"
-									class="footer-link credit-link">BACF Inc.
-								</a>
-							</div>
-						</div>
-					</div>
-
-
-					<!-- /Footer links -->
-				</div>
-			</div>
-		</footer>
-		<!-- /Footer -->
+      </div>
+    </div>
+    <!-- /FAQs -->
 
 
 
-		<!-- Code injection -->
-		<!-- Place this part in the code injection part of the website in the footer -->
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-			integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-			</script>
-		<script src="js/script.js"></script>
-	</body>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+      <div class="container">
+        <div class="row">
+
+          <div class="col col-xs-12 col-sm-4 col-md-4">
+
+            <div class="location">
+              <i class="fa fa-map-marker"></i> LOCATION
+              <h5>Brooklyn, New York</h5>
+            </div>
+          </div>
+
+          <div class="col col-xs-12 col-sm-4 col-md-4">
+
+            <div class="call">
+              <i class="fa fa-phone"></i> CALL US AT
+              <h5><a href="tel:4752896039">475-289-6039</a> </h5>
+
+            </div>
+          </div>
+
+          <div class="col col-xs-12 col-sm-4 col-md-4">
+
+            <div class="mail">
+              <i class="fa fa-envelope"></i> SEND US AN EMAIL
+              <h5><a href="mailto:eat@mariamskitchen.nyc">eat@mariamskitchen.nyc</a></h5>
+
+            </div>
+          </div>
+
+          <!-- Footer links -->
+          <div class="container footer-link-container">
+            <div class="row">
+              <div class="col col-xs-12">
+                <a href="https://www.mariamskitchen.nyc/" class="footer-link">Home</a>
+                <a href="/menu" class="footer-link">Menu</a>
+                <a href="/contact-us" class="footer-link">Contact Us</a>
+                <a href="#about" class="footer-link">About Us</a>
+                <a href="#faqs" class="footer-link">FAQs</a>
+                <a href="/menu" class="footer-link">Order Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="container footer-link-container">
+            <div class="row">
+              <div class="col-xs-12">
+                <a href="https://www.instagram.com/miriamskitchen/" class="footer-link instagram-link">
+                  Follow us on Instagram
+                  <i class="fa fa-instagram"></i>
+                </a>
+              </div>
+
+              <div class="col-xs-12 mt-3">
+                Developed with love by <a target="_blank" href="https://bacfinc.com/?utm_source=Mariams+Kitchen"
+                  class="footer-link credit-link">BACF Inc.
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- /Footer links -->
+        </div>
+      </div>
+    </footer>
+    <!-- /Footer -->
+
+
+
+    <!-- Code injection -->
+    <!-- Place this part in the code injection part of the website in the footer -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+      </script>
+    <script src="js/script.js"></script>
+  </body>
 
 </html>
