@@ -32,7 +32,7 @@
   --color-white: #fff;
   --color-primary: #cc5500;
   --color-tertiary: #817382;
-  --footer-bg: #3C3025;
+  --footer-bg: #3c3025;
 }
 
 /*
@@ -76,37 +76,38 @@ u {
 */
 
 @font-face {
-  font-family: 'Moonrising';
-  src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b1978e6877e2709074d70/1632311672112/Moonrising.ttf), url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b197dcb58a6025342df5c/1632311677493/Moonrising.otf);
+  font-family: "Moonrising";
+  src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b1978e6877e2709074d70/1632311672112/Moonrising.ttf),
+    url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b197dcb58a6025342df5c/1632311677493/Moonrising.otf);
 }
 
 @font-face {
-  font-family: 'Overlock Black';
+  font-family: "Overlock Black";
   src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b643818e25149436760ff/1632330808919/Overlock-Black.ttf);
 }
 
 @font-face {
-  font-family: 'Overlock BlackItalic';
+  font-family: "Overlock BlackItalic";
   src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b643486969d60aa7084da/1632330804727/Overlock-BlackItalic.ttf);
 }
 
 @font-face {
-  font-family: 'Overlock Bold';
+  font-family: "Overlock Bold";
   src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b642fce6c7405ff3b672b/1632330799557/Overlock-Bold.ttf);
 }
 
 @font-face {
-  font-family: 'Overlock BoldItalic';
+  font-family: "Overlock BoldItalic";
   src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b6429fe9fd346125e2694/1632330794196/Overlock-BoldItalic.ttf);
 }
 
 @font-face {
-  font-family: 'Overlock Italic';
+  font-family: "Overlock Italic";
   src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b63fdce6c7405ff3b616b/1632330750122/Overlock-Italic.ttf);
 }
 
 @font-face {
-  font-family: 'Overlock Regular';
+  font-family: "Overlock Regular";
   src: url(https://static1.squarespace.com/static/5f3ec22739e0ce0a5b5131a0/t/614b63d9d8b6886e92633cb2/1632330713704/Overlock-Regular.ttf);
 }
 
@@ -263,7 +264,7 @@ u {
 }
 
 .timed-popup .cta-btn-container {
-  margin-bottom: 1.625rem
+  margin-bottom: 1.625rem;
 }
 
 .timed-popup .form-container .validationResult {
@@ -341,7 +342,7 @@ button {
   text-align: center;
   font-weight: bold;
   font-size: 16px;
-  color: #DC9A3C;
+  color: #dc9a3c;
   display: block !important;
 }
 
@@ -356,7 +357,7 @@ button {
 
 /* 2 columns form */
 
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
   div#block-yui_3_17_2_1_1599054401120_5664 .form-wrapper .field-list {
     column-count: 2;
   }
@@ -390,7 +391,7 @@ p,
 .btn.btn--border,
 .theme-btn--primary.btn,
 .summary-title-link {
-  font-family: 'Overlock Regular' !important;
+  font-family: "Overlock Regular" !important;
   font-size: 20px;
 }
 
@@ -398,7 +399,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Overlock Regular', sans-serif !important;
+  font-family: "Overlock Regular", sans-serif !important;
   font-weight: normal;
   /* text-transform: uppercase; */
 }
@@ -420,11 +421,11 @@ h4 {
 }
 
 h5 {
-  font-size: .83rem
+  font-size: 0.83rem;
 }
 
 h6 {
-  font-size: .67rem
+  font-size: 0.67rem;
 }
 
 .sqs-block {
@@ -444,7 +445,7 @@ h6 {
 }
 
 .mt-3 {
-  margin-top: 1.665rem
+  margin-top: 1.665rem;
 }
 
 /*
@@ -560,7 +561,7 @@ select {
   -webkit-appearance: none !important;
   -moz-appearance: none !important;
   appearance: none !important;
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAASklEQVQ4jWNgGAUMynKKqcryCv+U5RX+k4j/Kcsp5pJrCEIzGS7B1EyCIbg1E2EIYc14DCFeMxZDSNcMAyry8tkq8vLZZGkeQQAArA1Z34fbHooAAAAASUVORK5CYII=) 96% / 15% no-repeat #EEE !important;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAASklEQVQ4jWNgGAUMynKKqcryCv+U5RX+k4j/Kcsp5pJrCEIzGS7B1EyCIbg1E2EIYc14DCFeMxZDSNcMAyry8tkq8vLZZGkeQQAArA1Z34fbHooAAAAASUVORK5CYII=) 96% / 15% no-repeat #eee !important;
   /* Tweak ends */
   width: 100% !important;
   padding: 12px !important;
@@ -568,7 +569,7 @@ select {
   border: 1px solid #ccc !important;
   background: #fafafa !important;
   color: #000 !important;
-  font-family: 'Overlock Regular' !important;
+  font-family: "Overlock Regular" !important;
   font-size: 12px !important;
   line-height: normal !important;
   box-sizing: border-box !important;
@@ -703,7 +704,7 @@ select::-ms-expand {
 */
 
 section.catering {
-  color: #3C3025;
+  color: #3c3025;
   font-family: "Overlock Regular", sans-serif;
   margin-top: -470px;
 }
@@ -763,17 +764,123 @@ section.catering a.btn,
 
 section.catering .btn.order,
 .nav .btn.order {
-  background-color: #CC5500;
+  background-color: #cc5500;
   color: #fff;
   max-width: 120px;
   margin: auto 12px;
 }
 
 section.catering .btn.menu-pdf {
-  color: #CC5500;
+  color: #cc5500;
   background-color: #fff;
-  border: 1px solid #CC5500;
+  border: 1px solid #cc5500;
 }
+
+.consultation {
+  width: 100%;
+  height: 490px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.consultation img {
+  width: 100%;
+  height: 100%;
+  opacity: 0.7;
+
+}
+
+.card-img-overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column
+}
+
+
+.text-div {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  flex-direction: column;
+  z-index: 2
+}
+
+.text-div .heading {
+  font-family: "Overlock Regular", sans-serif;
+  font-weight: 900;
+  color: #b14725;
+  font-size: 35px;
+  letter-spacing: -0.02em;
+  cursor: pointer;
+}
+
+.text-div p {
+  font-family: "Overlock Regular", sans-serif;
+  font-weight: normal;
+  color: whitesmoke;
+  letter-spacing: -0.4px;
+  font-size: 20px;
+  margin-top: -20px
+}
+
+.consultation div .book-consultation {
+
+  height: 35px;
+  border-radius: 6.75px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #b14725;
+  width: 250px;
+  cursor: pointer;
+  padding: 15px;
+  color: #ffffff;
+}
+
+.consultation div .book-consultation a {
+  font-family: "Overlock Regular", sans-serif;
+  font-weight: 700;
+  text-decoration: none;
+  letter-spacing: -0.54px;
+  color: #ffffff;
+}
+
+
+@media screen and (min-width: 768px) {
+  .text-div .heading {
+
+    font-weight: 900;
+    font-size: 55px;
+
+  }
+
+
+
+  .text-div p {
+
+    font-weight: normal;
+
+    letter-spacing: -0.4px;
+    font-size: 28px;
+    margin-top: -40px
+  }
+
+}
+
 
 /*
 	*
@@ -784,11 +891,11 @@ section.catering .btn.menu-pdf {
 */
 
 footer.footer {
-  background-color: var(--footer-bg, #3C3025);
-  font-family: 'Overlock Regular' !important;
+  background-color: var(--footer-bg, #3c3025);
+  font-family: "Overlock Regular" !important;
   color: var(--color-white, #fff);
   text-align: center;
-  padding: 3.225rem 1rem .525rem;
+  padding: 3.225rem 1rem 0.525rem;
   font-family: inherit;
   font-size: 16px;
 }
@@ -796,30 +903,30 @@ footer.footer {
 footer.footer a:link,
 footer.footer a:active,
 footer.footer a {
-  font-family: 'Overlock Regular' !important;
+  font-family: "Overlock Regular" !important;
   text-decoration: none;
   color: var(--color-white, #fff);
 }
 
 .footer a.footer-link:hover {
   text-decoration: none;
-  color: #CC5500;
+  color: #cc5500;
 }
 
 .footer .footer-link-container {
-  font-family: 'Overlock Regular' !important;
+  font-family: "Overlock Regular" !important;
   margin: 2.325rem auto;
 }
 
 .footer .footer-link-container .footer-link {
-  font-family: 'Overlock Regular' !important;
+  font-family: "Overlock Regular" !important;
   margin: auto 14px;
 }
 
 .footer h5,
 .footer .footer-link-container .footer-link.instagram-link,
 .footer .footer-link-container .footer-link.credit-link {
-  font-family: 'Overlock Regular' !important;
+  font-family: "Overlock Regular" !important;
   font-size: inherit;
 }
 
@@ -844,5 +951,4 @@ footer.footer a {
   .nav .cart {
     display: none;
   }
-
 }
