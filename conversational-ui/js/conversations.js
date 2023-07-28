@@ -15,7 +15,7 @@ var questions = {
   "0": {
     "name": "Introduction",
     "intro": true,
-    "question": ["Hello, Welcome to Mariam's Kitchen! How may I assist you?", "Please type either, \<b\>A la carte\<\/b\>, \<b\>Catering\<\/b\>, \<b\>Complaint\<\/b\>, or \<b\>Consultation\<\/b\>"],
+    "question": ["Hello, Welcome to Mariam's Kitchen! How may I assist you?", "Please type either: \<b\>A la carte\<\/b\>, \<b\>Catering\<\/b\>, \<b\>Complaint\<\/b\>, or \<b\>Consultation\<\/b\>"],
     "answers": {
       "default": {
         "replies": ["Nice virtually meeting you.", "This is an example demo to show you what I can do", "Apart from regular conversations using text"]
@@ -24,7 +24,7 @@ var questions = {
         "replies": [""]
       },
       "catering": {
-        "replies": ["Please type your event type from the list.", "\<b\>Naming ceremony\<\/b\>", "\<b\>Wedding\<\/b\>", "\<b\>Baby shower\<\/b\>", "\<b\>Brunch party\<\/b\>", "\<b\>Naming ceremony\<\/b\>", "\<b\>religious celebration\<\/b\>", "\<b\>Business\/ product launch\<\/b\>", "\<b\>Birthday or graduation\/ Other\<\/b\>"]
+        "replies": ["Please type the catering event type from this list:", "\<b\>naming ceremony\<\/b\>, \<b\>wedding\<\/b\>, \<b\>baby shower\<\/b\>, \<b\>brunch party\<\/b\>, \<b\>religious celebration\<\/b\>, \<b\>business\/ product launch\<\/b\>, or \<b\>birthday or graduation\/ Other\<\/b\>"]
       },
       "complaint": {
         "replies": [""]
@@ -36,7 +36,7 @@ var questions = {
   },
 
   "1": {
-    "name": "Embedding media",
+    "name": "Fill Catering Form",
     "question": ["You can also embed media such as \<b\>image\<\/b\>, \<b\>video\<\/b\>, and even \<b\>song\<\/b\> using regular HTML5 tags.", "Should I show you an example?"],
     "answers": {
       "default": {
