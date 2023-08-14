@@ -15,16 +15,16 @@ var questions = {
   "0": {
     "name": "Introduction",
     "intro": true,
-    "question": ["Hello, Welcome to Mariam's Kitchen! How may I assist you?", "Please type either: \<b\>A la carte\<\/b\>, \<b\>Catering\<\/b\>, \<b\>Complaint\<\/b\>, or \<b\>Consultation\<\/b\>"],
+    "question": ["Hello, Welcome to Mariam's Kitchen! How may I assist you?", "Please type either: <ol><li>\<b\>A la carte\<\/b\></li><li>\<b\>Catering\<\/b\></li><li>\<b\>Complaint\<\/b\></li><li>\<b\>Consultation\<\/b\></li></ol>"],
     "answers": {
       "default": {
-        "replies": ["Nice virtually meeting you.", "This is an example demo to show you what I can do", "Apart from regular conversations using text"]
+        "replies": ["I am sorry, I am not sure I understood your request. Please make use of the catering form to place your order.", "Thank you."]
       },
       "carte|a la carte": {
         "replies": [""]
       },
       "catering": {
-        "replies": ["Please type the catering event type from this list:", "\<b\>naming ceremony\<\/b\>, \<b\>wedding\<\/b\>, \<b\>baby shower\<\/b\>, \<b\>brunch party\<\/b\>, \<b\>religious celebration\<\/b\>, \<b\>business\/ product launch\<\/b\>, or \<b\>birthday or graduation\/ Other\<\/b\>"]
+        "replies": [""]
       },
       "complaint": {
         "replies": [""]
