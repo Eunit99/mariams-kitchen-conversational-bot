@@ -1,10 +1,10 @@
 (function ($) {
   $(document).ready(function () {
     var $chatbox = $(".chatbox"),
-      $chatboxTitleClose = $(".chatbox__title__close"),
-      $chatbox_container = $(".chatbox_container"),
-      $floatingBubble = $(".floatingBubble"),
-      $chatbox__title = $(".chatbox__title");
+        $chatboxTitleClose = $(".chatbox__title__close"),
+        $chatbox_container = $(".chatbox_container"),
+        $floatingBubble = $(".floatingBubble"),
+        $chatbox__title = $(".chatbox__title");
 
     $("body").ready(function () {
       $(".chatbox_container").hide().delay(1000).fadeIn(1000); // You can customize the time you want the chat window to be displayed with the 'delay' and 'fadeIn' properties
@@ -30,9 +30,7 @@
     $chatboxTitleClose.on("click", function (e) {
       e.stopPropagation();
       $chatbox.addClass("chatbox--closed");
-      $(".floatingBubble")
-        .hide()
-        .fadeIn(1e3); // fadeIn (100ms) of the floatingBubble
+      $(".floatingBubble").hide().fadeIn(1e3); // fadeIn (100ms) of the floatingBubble
     });
   });
 })(jQuery);
@@ -49,13 +47,13 @@ function closeOverlay() {
 }
 //   Script for overlay END
 
-$(document).ready((function () {
-  var date = new Date,
-    sec = date.getSeconds(),
-    min = date.getMinutes(),
-    hour = date.getHours(),
-    copyrightYear = date.getFullYear();
-  $("document").ready((function () {
-    $("#copyright").text(copyrightYear)
-  }))
-}))
+$(document).ready(function () {
+  var date = new Date(),
+      sec = date.getSeconds(),
+      min = date.getMinutes(),
+      hour = date.getHours(),
+      copyrightYear = date.getFullYear();
+  $("document").ready(function () {
+    $("#copyright").text(copyrightYear);
+  });
+});
