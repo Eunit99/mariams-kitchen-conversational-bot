@@ -25,7 +25,7 @@ body {
   position: absolute;
   bottom: 5px;
   margin-top: 12px;
-  font-size: x-small;
+  font-size: xx-small;
   text-align: center;
   -o-transform: translate(40px, 10px);
   -webkit-transform: translate(40px, 10px);
@@ -307,9 +307,10 @@ a.floating:after {
   bottom: -400px;
 }
 
-div.received_withd_msg p,
+div.received_msg p,
 div.sent_msg p {
   animation: bounceIn 0.2s ease;
+  font-size: 14px;
   transform-origin: 0 0 0;
 }
 
@@ -453,16 +454,15 @@ div.sent_msg p {
 
 
 /* ****** Uncomment to remove scrollbar space ******
-****** optional: just make scrollbar invisible ******
+****** optional: just make scrollbar invisible ******/
 
 div.chatbox__body::-webkit-scrollbar,
 div.chatbox__body.messaging::-webkit-scrollbar,
 .messaging::-webkit-scrollbar {
-    width: 0px;
-    height: 0px;
-    background: transparent;
+  width: 0px;
+  height: 0px;
+  background: transparent;
 }
-*/
 
 .chatbox__body {
   font-weight: 400;
@@ -589,16 +589,16 @@ img.chat_img {
   word-wrap: break-word;
 }
 
-.received_withd_msg {
+.received_msg {
   margin: 7px auto;
 }
 
-.received_withd_msg p {
+
+.received_msg p {
   background-color: var(--creative__received__msg__bg, #cccccc57);
   /* Fallback for legacy browsers */
   color: var(--creative__received__msg__txt, #000000);
   border-radius: 0 20px 20px 20px;
-  font-size: 14px;
   margin: 0;
   padding: 10px 15px 8px;
 }
