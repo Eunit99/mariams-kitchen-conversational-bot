@@ -21,7 +21,7 @@ function createMessage(messagesArray, i, response) {
   response = typeof response !== 'undefined' ? response : 0;
 
   // add this HTML to the front and back of the message for #style
-  var htmlWrapperBeginning = '<div class="msg_history"><div class="incoming_msg"><div class="received_msg"><div class="animated fadeInUp bubbleLeft received_withd_msg"><p>',
+  var htmlWrapperBeginning = '<div class="msg_history"><div class="incoming_msg"><div class="received_msg"><div class="animated fadeInUp bubbleLeft received_msg"><p>',
     htmlWrapperEnding = '</p></div></div></div>';
 
   // If this message is not the first, use the previous to calculate a delay, otherwise use a number

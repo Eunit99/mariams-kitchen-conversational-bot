@@ -208,7 +208,7 @@ textarea,
     max-height: 450px;
 }
 
-div.received_withd_msg p,
+div.received_msg p,
 div.sent_msg p {
     animation: bounceIn 0.2s ease;
     transform-origin: 0 0 0;
@@ -481,11 +481,11 @@ img.chat_img {
     word-wrap: break-word;
 }
 
-.received_withd_msg {
+.received_msg {
     margin: 7px auto;
 }
 
-.received_withd_msg p {
+.received_msg p {
     background-color: rgba(213, 232, 255, 0.35) !important;
     color: #393939 !important;
     border-radius: 0 20px 20px 20px;

@@ -15,22 +15,22 @@ var questions = {
   "0": {
     "name": "Introduction",
     "intro": true,
-    "question": ["Hello, Welcome to Mariam's Kitchen! How may I assist you?", "Please type either: <ol><li>\<b\>A la carte\<\/b\></li><li>\<b\>Catering\<\/b\></li><li>\<b\>Complaint\<\/b\></li><li>\<b\>Consultation\<\/b\></li></ol>"],
+    "question": ["Hello, Welcome to Mariam's Kitchen! How may I assist you?", "Please type either: \<br \/> 1. \<b\>A la carte\<\/b\> \<br \/> 2.<b\>Catering\<\/b\>\<br \/> 3.\<b\>Complaint\<\/b\>\<br \/> 4.\<b\>Consultation\<\/b\></li></ol>"],
     "answers": {
       "default": {
         "replies": ["I am sorry, I am not sure I understood your request. Please make use of the catering form to place your order.", "Thank you."]
       },
-      "carte|a la carte": {
-        "replies": [""]
+      "carte|a la carte|1": {
+        "replies": ["carte"]
       },
-      "catering": {
-        "replies": [""]
+      "catering|2": {
+        "replies": ["catering"]
       },
-      "complaint": {
-        "replies": [""]
+      "complaint|3": {
+        "replies": ["complaint"]
       },
-      "consultation": {
-        "replies": [""]
+      "consultation|4": {
+        "replies": ["consultation"]
       }
     }
   },
