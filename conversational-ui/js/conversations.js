@@ -25,12 +25,12 @@ var questions = {
         "replies": ["Alright. What would you like to order?"]
       },
       "catering|2": {
-        "replies": ["catering"]
+        "replies": ["Please make use of our \<a href='https://www.mariamskitchen.nyc/order-now' title='Use our catering form to order' class='link'\>catering\<\/a\> form to place your catering order."]
       },
-      "complaint|3": {
-        "replies": ["complaint"]
+      "complaint|help|3": {
+        "replies": ["I apologize for any inconvenience caused. Please send your complaints to <a href='mailto:eat@mariamskitchen.nyc' title='Mail us your complaints' class='link'\>eat@mariamskitchen.nyc\<\/a\>, and we will address it promptly."]
       },
-      "consultation|4": {
+      "consultation|consult|4": {
         "replies": ["Please click this \<a href='https://calendar.app.google/haCMbrEr1MVQFXvGA' target='_blank' title='Book a consultation' class='link'\>link\<\/a\> to book a consultation."],
         "ending": true
       }
@@ -38,45 +38,66 @@ var questions = {
   },
 
   "1": {
-    "name": "Fill Catering Form",
-    "question": ["You can also embed media such as \<b\>image\<\/b\>, \<b\>video\<\/b\>, and even \<b\>song\<\/b\> using regular HTML5 tags.", "Should I show you an example?"],
+    "name": "Do other thing",
+    "question": ["Would you be interested in engaging in any additional activities?"],
     "answers": {
       "default": {
-        "replies": ["I will show you an example of an embedded image 👌", "<img src='img/embedded-image.png' alt='Embedded image' class='embedded-image' />"]
+        "replies": ["I am sorry, I am not sure I understood that request. Please click this link to read our \<a href='https://www.mariamskitchen.nyc/#faqs' target='_blank' title='read our FAQs' class='link'\>FAQs\<\/a\>."]
       },
       "i don't|don't|no": {
-        "replies": ["Why did you visit then 😡", "I will show you an example of an embedded image 👌", "<img src='img/embedded-image.png' alt='Embedded image' class='embedded-image' />"]
+        "replies": ["Well...", "I insist"]
       },
       "yes|yeah|great|sure|of|course": {
-        "replies": ["Sure", "This is an example of an embedded image 👌", "<img src='img/embedded-image.png' alt='Embedded image' class='embedded-image' />"]
+        "replies": ["What would you like to know about Mariam's Kitchen?"]
       },
       "maybe|undecided": {
-        "replies": ["Why did you visit then 😡", "I will show you an example of an embedded image 👌", "<img src='img/embedded-image.png' alt='Embedded image' class='embedded-image' />"]
+        "replies": ["Maybe 🤔", "What would you like to know about Mariam's Kitchen?"]
       },
     }
   },
 
   "2": {
-    "name": "User feedback",
-    "question": ["How would you describe Helene UI?", "Like  \<b\>Awesome\<\/b\>?  \<b\>Great\<\/b\>?  \<b\>Better\<\/b\>?  \<b\>Good\<\/b\>? \<b\>Bad\<\/b\>? "],
+    "name": "FAQs",
+    "question": ["Type your question and I will try my best to provide an answer"],
     "answers": {
       "default": {
-        "replies": ["I don't think I got that, but for me, this UI is <b\>Great\<\/b\> 👌", "Helene UI is still in development stage and needs contributors, check out the <a href='https://github.com/eunit99/helene-ui' target='_blank' title='Helene UI on Github' class='link'>Github repo<\/a> to contribute."]
+        "replies": ["I am sorry, I am not sure I understood that request. Please click this link to read our \<a href='https://www.mariamskitchen.nyc/#faqs' target='_blank' title='read our FAQs' class='link'\>FAQs\<\/a\>."]
+      },
+      "want menu|customized menu|menu": {
+        "replies": ["Please click this \<a href='https://mariamskitchen.nyc/s/Mariams-Kitchen-menu-1.pdf' target='_blank' title='Download our menu' class='link'\>link\<\/a\> to download our menu"]
+      },
+      "contact|reach you| phone| number": {
+        "replies": ["475-289-6039"]
+      },
+      "email": {
+        "replies": ["Please send your email to to <a href='mailto:eat@mariamskitchen.nyc' title='Mail us' class='link'\>eat@mariamskitchen.nyc\<\/a\>, and we will be in touch."]
+      }
+
+      // Other FAQs here, see the PDF I shared
+    }
+  },
+
+  "3": {
+    "name": "User feedback",
+    "question": ["How would you describe Mariam's Bot?", "Like  \<b\>Awesome\<\/b\>?  \<b\>Great\<\/b\>?  \<b\>Better\<\/b\>?  \<b\>Good\<\/b\>? \<b\>Bad\<\/b\>? "],
+    "answers": {
+      "default": {
+        "replies": ["I don't think I got that, but for me, this conversation is <b\>Great\<\/b\> 👌"]
       },
       "i don't|don't|no": {
-        "replies": ["...", "For me, this UI is <b\>Great\<\/b\> 👌", "Helene UI is still in development stage and needs contributors, check out the <a href='https://github.com/eunit99/helene-ui' target='_blank' title='Helene UI on Github' class='link'>Github repo<\/a> to contribute."]
+        "replies": ["...", "For me, this conversation is <b\>Great\<\/b\> 👌"]
       },
       "awesome": {
-        "replies": [" \<b\>Awesome\<\/b\>! Nice to hear 👌", "Helene UI is still in development stage and needs contributors, check out the <a href='https://github.com/eunit99/helene-ui' target='_blank' title='Helene UI on Github' class='link'>Github repo<\/a> to contribute."]
+        "replies": [" \<b\>Awesome\<\/b\>! Nice to hear 👌"]
       },
       "great": {
-        "replies": [" \<b\>Great\<\/b\>! Nice to hear 👌", "Helene UI is still in development stage and needs contributors, check out the <a href='https://github.com/eunit99/helene-ui' target='_blank' title='Helene UI on Github' class='link'>Github repo<\/a> to contribute."]
+        "replies": [" \<b\>Great\<\/b\>! Nice to hear 👌"]
       },
       "better|best": {
-        "replies": [" \<b\>Better\<\/b\>! Nice to hear 👌", "Helene UI is still in development stage and needs contributors, check out the <a href='https://github.com/eunit99/helene-ui' target='_blank' title='Helene UI on Github' class='link'>Github repo<\/a> to contribute."]
+        "replies": [" \<b\>Better\<\/b\>! Nice to hear 👌"]
       },
       "good": {
-        "replies": [" \<b\>Good\<\/b\>! Nice to hear 👌", "Helene UI is still in development stage and needs contributors, check out the <a href='https://github.com/eunit99/helene-ui' target='_blank' title='Helene UI on Github' class='link'>Github repo<\/a> to contribute."]
+        "replies": [" \<b\>Good\<\/b\>! Nice to hear 👌"]
       },
       "bad": {
         "replies": [" \<b\>Bad\<\/b\>! We are working to make it better 👌"]
@@ -84,9 +105,9 @@ var questions = {
     }
   },
 
-  "3": {
+  "4": {
     "name": "ending",
-    "question": ["This was just a demo of Helene UI, be sure to check out the <a href='https://github.com/eunit99/helene-ui' target='_blank' title='Helene UI Docs' class='link'>Docs<\/a> to configure your own conversational user interface right away 😉", "Helene UI is licensed under the <b\>MIT License\<\/b\> and developed by <a  target='_blank' href='https://github.com/eunit99/' title='Helene UI is developed by Eunit' class='link'>Eunit<\/a>", "See ya! 👋"],
+    "question": ["See ya! 👋"],
     "ending": true
   }
 }
