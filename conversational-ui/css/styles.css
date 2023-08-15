@@ -593,6 +593,10 @@ img.chat_img {
   margin: 7px auto;
 }
 
+.received_msg a,
+.link {
+  color: var(--creative__primary__1, #00c497)
+}
 
 .received_msg p {
   background-color: var(--creative__received__msg__bg, #cccccc57);

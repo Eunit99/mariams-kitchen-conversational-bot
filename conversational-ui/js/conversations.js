@@ -15,13 +15,14 @@ var questions = {
   "0": {
     "name": "Introduction",
     "intro": true,
-    "question": ["Hello, Welcome to Mariam's Kitchen! How may I assist you?", "Please type either: \<br \/> 1. \<b\>A la carte\<\/b\> \<br \/> 2.<b\>Catering\<\/b\>\<br \/> 3.\<b\>Complaint\<\/b\>\<br \/> 4.\<b\>Consultation\<\/b\></li></ol>"],
+    "question": ["Hello, Welcome to Mariam's Kitchen! How may I assist you?", "Please type either: \<br \/>\<br \/>1. \<b\>A la carte\<\/b\> \<br \/> 2. <b\>Catering\<\/b\>\<br \/> 3. \<b\>Complaint\<\/b\>\<br \/> 4. \<b\>Consultation\<\/b\></li></ol>"],
     "answers": {
       "default": {
-        "replies": ["I am sorry, I am not sure I understood your request. Please make use of the catering form to place your order.", "Thank you."]
+        "replies": ["I am sorry, I am not sure I understood your request. Please make use of our \<a href='https://www.mariamskitchen.nyc/order-now' title='Use our catering form to order' class='link'\>catering\<\/a\> form to place your order.", "Thank you."],
+        "ending": true
       },
       "carte|a la carte|1": {
-        "replies": ["carte"]
+        "replies": ["Alright. What would you like to order?"]
       },
       "catering|2": {
         "replies": ["catering"]
@@ -30,7 +31,8 @@ var questions = {
         "replies": ["complaint"]
       },
       "consultation|4": {
-        "replies": ["consultation"]
+        "replies": ["Please click this \<a href='https://calendar.app.google/haCMbrEr1MVQFXvGA' target='_blank' title='Book a consultation' class='link'\>link\<\/a\> to book a consultation."],
+        "ending": true
       }
     }
   },
