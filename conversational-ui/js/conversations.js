@@ -69,8 +69,155 @@ var questions = {
       "contact|reach you| phone| number": {
         "replies": ["475-289-6039"]
       },
-      "email": {
-        "replies": ["Please send your email to to <a href='mailto:eat@mariamskitchen.nyc' title='Mail us' class='link'\>eat@mariamskitchen.nyc\<\/a\>, and we will be in touch."]
+      "Location|Address|Kitchen|": {
+        "replies": ["Mariam's Kitchen is located at 598, Throop Avenue Brooklyn, NY."]
+      },
+      "New York|Locate|Located": {
+        "replies": ["Yes, we are located in New York, specifically at Throop Avenue Brooklyn, NY."]
+      },
+      "Buffet-style|Buffet|Plated Meals|Plate": {
+        "replies": ["Yes, we offer/ Yes, we do"]
+      },
+      "Restaurant’s hours|Operation Hours|Working Hours": {
+        "replies": [""]
+      },
+      "Prices|Price|Dish Price|Price List": {
+        "replies": [""]
+      },
+      "Payment methods|Pay|Cash|Card": {
+        "replies": [""]
+      },
+      "Condiments?|Ingredients ": {
+        "replies": [""]
+      },
+      "Opening hours|Working Hour|Operation Hour ": {
+        "replies": [""]
+      },
+      "Cuisine Type|Specialization|Dish Type": {
+        "replies": [""]
+      },
+      "Pick-up|Pick up service|Delivery service": {
+        "replies": ["Yes, we do/ we offer only pick up services"]
+      },
+      "Additional fee|Hidden fee|Terms & Condition": {
+        "replies": [""]
+      },
+      "Catering services|Catering": {
+        "replies": ["Yes! We do weddings, parties, and private events. The minimum for a catering order is $250. Email us at eat@mariamskitchen.nyc to place your order."]
+      },
+      "Indoor Catering|Outdoor Catering": {
+        "replies": [""]
+      },
+      "Cancellation policy|Catering orders|Cancellation|Cancel": {
+        "replies": [""]
+      },
+      "Payment|Catering Payment|Catering Service": {
+        "replies": [""]
+      },
+      "Catering service equipments|Plates|Utensils|Equipments": {
+        "replies": ["Yes, we do "]
+      },
+      "Discounts|Available|Availability catering service": {
+        "replies": [""]
+      },
+      "Average cost|Per person|Cost": {
+        "replies": [""]
+      },
+      "How many guests|Accommodate": {
+        "replies": [""]
+      },
+      "Maximum notice|Deadline|Order Deadline": {
+        "replies": [""]
+      },
+      "Order Change|Change Order|Add Order|Cancel Order|Catering Order|Last minute": {
+        "replies": [""]
+      },
+      "Maximum Guests|Minimum Guests|Guests Number": {
+        "replies": [""]
+      },
+      "Vegetarian|Vegan options|Vegetarian Option": {
+        "replies": [" Yes, we do. We can customize your order based on your preferences. Kindly send us an email (eat@mariamskitchen.nyc) with a detailed request."]
+      },
+      "Popular Dishes|Favorite Dishes": {
+        "replies": [""]
+      },
+      "Takeaway order|Takeaway|Takeaway Service": {
+        "replies": [""]
+      },
+      "Delivery|Home Delivery|Delivery Service": {
+        "replies": [""]
+      },
+      "How far delivery|How long delivery|Delivery distance": {
+        "replies": ["No more than a 20-mile radius of the Barclays Center"]
+      },
+      "Feedback|Experience|Rating|Rate": {
+        "replies": [""]
+      },
+      "Gluten-free|Gluten-free options": {
+        "replies": [""]
+      },
+      "Desserts|Signature Desserts": {
+        "replies": [""]
+      },
+      "Large Groups|Accommodate Large Groups|Private events": {
+        "replies": [""]
+      },
+      "Ingredients|Organic Ingredients|Local Ingredients|Ingredient Source": {
+        "replies": [""]
+      },
+      "Daily Specials|Daily Promotions|Promotions": {
+        "replies": [""]
+      },
+      "Gift Cards|Purchase Gift Card": {
+        "replies": [""]
+      },
+      "Food allergies|Allergies": {
+        "replies": [""]
+      },
+      "Breakfast Options|Nigerian Breakfast|Traditional Breakfast": {
+        "replies": [""]
+      },
+      "News and events|Updated News|Upcoming Events": {
+        "replies": [""]
+      },
+      "Parking Space|Car Parking| Vehicle Parking| Restaurant Parking Space": {
+        "replies": [""]
+      },
+      "Meal Plan|Meal customizations|diet plan| Dietary modifications": {
+        "replies": [""]
+      },
+      "Seasonal Menu Items|Limited Time Menu Items|Limited Menu Items": {
+        "replies": [""]
+      },
+      "Merchandise|Branded Products|Purchase Merchandise|Purchase Branded Products": {
+        "replies": [""]
+      },
+      "Wait for|Wait time|Takeaway Wait Time": {
+        "replies": [""]
+      },
+      "Large groups| reservation for large groups|reservation required": {
+        "replies": [""]
+      },
+      "Bring Wine|Bring Alcohol|Bring Beverages": {
+        "replies": [""]
+      },
+      "Children|Children Options|Children Menu": {
+        "replies": [""]
+      },
+      "Cultural Dietary Requirements|Religious dietary requirements| Accommodate Requirements": {
+        "replies": [""]
+      },
+      "First Time Visitors|First Time|First Time dishes|first-time dishes": {
+        "replies": [""]
+      },
+      "Refund|Refund policy": {
+        "replies": ["Mariam’s Kitchen does not offer refunds."]
+      },
+      "Weekend Order| When to order weekend special| weekend special": {
+        "replies": ["Mondays 12pm – Wednesdays 11:59pm. "]
+      },
+      "When can order be delivered|When can order be picked up|pick up|order delivery|order delivery|order pickup": {
+        "replies": ["Orders are available for delivery/pick up on Saturday between 4pm-8pm"]
       }
 
       // Other FAQs here, see the PDF I shared
