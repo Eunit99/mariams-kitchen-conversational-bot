@@ -70,7 +70,7 @@ var questions = {
         "replies": ["475-289-6039"]
       },
       "email":{
-        "replies": ["Please send your email to <a href='mailto:eat@mariamskitchen.nyc' title='Mail us' class='link'\>eat@mariamskitchen.nyc\<\/a\>"]
+        "replies": ["Please send your email to to <a href='mailto:eat@mariamskitchen.nyc' title='Mail us' class='link'\>eat@mariamskitchen.nyc\<\/a\>, and we will be in touch."]
       },
       "Location|Address|Kitchen|": {
         "replies": ["Mariam's Kitchen is located at 598, Throop Avenue Brooklyn, NY."]
@@ -106,7 +106,7 @@ var questions = {
         "replies": [""]
       },
       "Catering services|Catering": {
-        "replies": ["Yes! We do weddings, parties, and private events. The minimum for a catering order is $250. <a href='mailto:eat@mariamskitchen.nyc' title='Mail us for more enquiries' class='link'\>eat@mariamskitchen.nyc\<\/a\> Email us to place your order."]
+        "replies": ["Yes! We do weddings, parties, and private events. The minimum for a catering order is $250. <a href='mailto:eat@mariamskitchen.nyc' title='Mail us for more enquiries' class='link'\>Email\<\/a\> us to place your order."]
       },
       "Indoor Catering|Outdoor Catering": {
         "replies": [""]
@@ -139,7 +139,7 @@ var questions = {
         "replies": [""]
       },
       "Vegetarian|Vegan options|Vegetarian Option": {
-        "replies": [" Yes, we do. We can customize your order based on your preferences. Kindly send us an email (eat@mariamskitchen.nyc) with a detailed request."]
+        "replies": [" Yes, we do. We can customize your order based on your preferences. Kindly send us an <a href='mailto:eat@mariamskitchen.nyc' title='Mail us' class='link'\>email\<\/a\> with a detailed request."]
       },
       "Popular Dishes|Favorite Dishes": {
         "replies": [""]
