@@ -69,6 +69,9 @@ var questions = {
       "contact|reach you| phone| number": {
         "replies": ["475-289-6039"]
       },
+      "email":{
+        "replies": ["Please send your email to <a href='mailto:eat@mariamskitchen.nyc' title='Mail us' class='link'\>eat@mariamskitchen.nyc\<\/a\>"]
+      },
       "Location|Address|Kitchen|": {
         "replies": ["Mariam's Kitchen is located at 598, Throop Avenue Brooklyn, NY."]
       },
@@ -103,7 +106,7 @@ var questions = {
         "replies": [""]
       },
       "Catering services|Catering": {
-        "replies": ["Yes! We do weddings, parties, and private events. The minimum for a catering order is $250. Email us at eat@mariamskitchen.nyc to place your order."]
+        "replies": ["Yes! We do weddings, parties, and private events. The minimum for a catering order is $250. <a href='mailto:eat@mariamskitchen.nyc' title='Mail us for more enquiries' class='link'\>eat@mariamskitchen.nyc\<\/a\> Email us to place your order."]
       },
       "Indoor Catering|Outdoor Catering": {
         "replies": [""]
