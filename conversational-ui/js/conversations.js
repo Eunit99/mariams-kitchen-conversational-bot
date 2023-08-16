@@ -72,154 +72,154 @@ var questions = {
       "email":{
         "replies": ["Please send your email to to <a href='mailto:eat@mariamskitchen.nyc' title='Mail us' class='link'\>eat@mariamskitchen.nyc\<\/a\>, and we will be in touch."]
       },
-      "Location|Address|Kitchen|": {
+      "location|address|kitchen|": {
         "replies": ["Mariam's Kitchen is located at 598, Throop Avenue Brooklyn, NY."]
       },
-      "New York|Locate|Located": {
+      "new york|locate|located": {
         "replies": ["Yes, we are located in New York, specifically at Throop Avenue Brooklyn, NY."]
       },
-      "Buffet-style|Buffet|Plated Meals|Plate": {
+      "buffet-style|buffet|plated meals|plate": {
         "replies": ["Yes, we offer/ Yes, we do"]
       },
-      "Restaurant’s hours|Operation Hours|Working Hours": {
+      "restaurant’s hours|operation hours|working hours": {
         "replies": [""]
       },
-      "Prices|Price|Dish Price|Price List": {
+      "prices|price|dish price|price list": {
         "replies": [""]
       },
-      "Payment methods|Pay|Cash|Card": {
+      "payment methods|pay|cash|card": {
         "replies": [""]
       },
-      "Condiments?|Ingredients ": {
+      "condiments?|ingredients ": {
         "replies": [""]
       },
-      "Opening hours|Working Hour|Operation Hour ": {
+      "opening hours|working hour|operation hour ": {
         "replies": [""]
       },
-      "Cuisine Type|Specialization|Dish Type": {
+      "cuisine type|specialization|dish type": {
         "replies": [""]
       },
-      "Pick-up|Pick up service|Delivery service": {
+      "pick-up|pick up service|delivery service": {
         "replies": ["Yes, we do/ we offer only pick up services"]
       },
-      "Additional fee|Hidden fee|Terms & Condition": {
+      "additional fee|hidden fee|terms & condition": {
         "replies": [""]
       },
-      "Catering services|Catering": {
+      "catering services|catering": {
         "replies": ["Yes! We do weddings, parties, and private events. The minimum for a catering order is $250. <a href='mailto:eat@mariamskitchen.nyc' title='Mail us for more enquiries' class='link'\>Email\<\/a\> us to place your order."]
       },
-      "Indoor Catering|Outdoor Catering": {
+      "indoor catering|outdoor catering": {
         "replies": [""]
       },
-      "Cancellation policy|Catering orders|Cancellation|Cancel": {
+      "cancellation policy|catering orders|cancellation|cancel": {
         "replies": [""]
       },
-      "Payment|Catering Payment|Catering Service": {
+      "payment|catering payment|catering service": {
         "replies": [""]
       },
-      "Catering service equipments|Plates|Utensils|Equipments": {
+      "catering service equipments|plates|utensils|equipments": {
         "replies": ["Yes, we do "]
       },
-      "Discounts|Available|Availability catering service": {
+      "discounts|available|availability catering service": {
         "replies": [""]
       },
-      "Average cost|Per person|Cost": {
+      "average cost|per person|cost": {
         "replies": [""]
       },
-      "How many guests|Accommodate": {
+      "how many guests|accommodate": {
         "replies": [""]
       },
-      "Maximum notice|Deadline|Order Deadline": {
+      "maximum notice|deadline|order deadline": {
         "replies": [""]
       },
-      "Order Change|Change Order|Add Order|Cancel Order|Catering Order|Last minute": {
+      "order change|change order|add order|cancel order|catering order|last minute": {
         "replies": [""]
       },
-      "Maximum Guests|Minimum Guests|Guests Number": {
+      "maximum guests|minimum guests|guests number": {
         "replies": [""]
       },
-      "Vegetarian|Vegan options|Vegetarian Option": {
+      "vegetarian|vegan options|vegetarian option": {
         "replies": [" Yes, we do. We can customize your order based on your preferences. Kindly send us an <a href='mailto:eat@mariamskitchen.nyc' title='Mail us' class='link'\>email\<\/a\> with a detailed request."]
       },
-      "Popular Dishes|Favorite Dishes": {
+      "popular dishes|favorite dishes": {
         "replies": [""]
       },
-      "Takeaway order|Takeaway|Takeaway Service": {
+      "takeaway order|takeaway|takeaway service": {
         "replies": [""]
       },
-      "Delivery|Home Delivery|Delivery Service": {
+      "delivery|home delivery|delivery service": {
         "replies": [""]
       },
-      "How far delivery|How long delivery|Delivery distance": {
+      "how far delivery|how long delivery|delivery distance": {
         "replies": ["No more than a 20-mile radius of the Barclays Center"]
       },
-      "Feedback|Experience|Rating|Rate": {
+      "feedback|experience|rating|rate": {
         "replies": [""]
       },
-      "Gluten-free|Gluten-free options": {
+      "gluten-free|gluten-free options": {
         "replies": [""]
       },
-      "Desserts|Signature Desserts": {
+      "desserts|signature desserts": {
         "replies": [""]
       },
-      "Large Groups|Accommodate Large Groups|Private events": {
+      "large groups|accommodate large groups|private events": {
         "replies": [""]
       },
-      "Ingredients|Organic Ingredients|Local Ingredients|Ingredient Source": {
+      "ingredients|organic ingredients|local ingredients|ingredient source": {
         "replies": [""]
       },
-      "Daily Specials|Daily Promotions|Promotions": {
+      "daily specials|daily promotions|promotions": {
         "replies": [""]
       },
-      "Gift Cards|Purchase Gift Card": {
+      "gift cards|purchase gift card": {
         "replies": [""]
       },
-      "Food allergies|Allergies": {
+      "food allergies|allergies": {
         "replies": [""]
       },
-      "Breakfast Options|Nigerian Breakfast|Traditional Breakfast": {
+      "breakfast options|nigerian breakfast|traditional breakfast": {
         "replies": [""]
       },
-      "News and events|Updated News|Upcoming Events": {
+      "news and events|updated news|upcoming events": {
         "replies": [""]
       },
-      "Parking Space|Car Parking| Vehicle Parking| Restaurant Parking Space": {
+      "parking space|car parking| vehicle parking| restaurant parking space": {
         "replies": [""]
       },
-      "Meal Plan|Meal customizations|diet plan| Dietary modifications": {
+      "meal plan|meal customizations|diet plan| dietary modifications": {
         "replies": [""]
       },
-      "Seasonal Menu Items|Limited Time Menu Items|Limited Menu Items": {
+      "seasonal menu items|limited time menu items|limited menu items": {
         "replies": [""]
       },
-      "Merchandise|Branded Products|Purchase Merchandise|Purchase Branded Products": {
+      "merchandise|branded products|purchase merchandise|purchase branded products": {
         "replies": [""]
       },
-      "Wait for|Wait time|Takeaway Wait Time": {
+      "wait for|wait time|takeaway wait time": {
         "replies": [""]
       },
-      "Large groups| reservation for large groups|reservation required": {
+      "large groups| reservation for large groups|reservation required": {
         "replies": [""]
       },
-      "Bring Wine|Bring Alcohol|Bring Beverages": {
+      "bring wine|bring alcohol|bring beverages": {
         "replies": [""]
       },
-      "Children|Children Options|Children Menu": {
+      "children|children options|children menu": {
         "replies": [""]
       },
-      "Cultural Dietary Requirements|Religious dietary requirements| Accommodate Requirements": {
+      "cultural dietary requirements|religious dietary requirements| accommodate requirements": {
         "replies": [""]
       },
-      "First Time Visitors|First Time|First Time dishes|first-time dishes": {
+      "first time visitors|first time|first time dishes|first-time dishes": {
         "replies": [""]
       },
-      "Refund|Refund policy": {
+      "refund|refund policy": {
         "replies": ["Mariam’s Kitchen does not offer refunds."]
       },
-      "Weekend Order| When to order weekend special| weekend special": {
+      "weekend order| when to order weekend special| weekend special": {
         "replies": ["Mondays 12pm – Wednesdays 11:59pm. "]
       },
-      "When can order be delivered|When can order be picked up|pick up|order delivery|order delivery|order pickup": {
+      "when can order be delivered|when can order be picked up|pick up|order delivery|order delivery|order pickup": {
         "replies": ["Orders are available for delivery/pick up on Saturday between 4pm-8pm"]
       }
 
