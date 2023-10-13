@@ -99,7 +99,7 @@ var questions = {
           "Please send your email to to <a href='mailto:eat@mariamskitchen.nyc' title='Mail us' class='link'>eat@mariamskitchen.nyc</a>, and we will be in touch.",
         ],
       },
-      "location|address|kitchen|": {
+      "location|address|kitchen": {
         replies: [
           "Mariam's Kitchen is located at 598, Throop Avenue Brooklyn, NY.",
         ],
