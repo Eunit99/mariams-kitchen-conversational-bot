@@ -595,7 +595,8 @@ img.chat_img {
 
 .received_msg a,
 .link {
-  color: var(--creative__primary__1, #00c497)
+  color: var(--creative__primary__1, #00c497);
+  cursor: pointer;
 }
 
 .received_msg p {
