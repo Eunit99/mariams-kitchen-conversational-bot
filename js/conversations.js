@@ -17,12 +17,12 @@ var questions = {
     intro: true,
     question: [
       "Hello, Welcome to Mariam's Kitchen! How may I assist you?",
-      "Please type either: <br /><br />1. <b>A la carte</b> <br /> 2. <b>Catering</b><br /> 3. <b>Complaint</b><br /> 4. <b>Consultation</b></li></ol>",
+      "Please type either:<br />1. <b>A la carte</b> <br /> 2. <b>Catering</b><br /> 3. <b>Complaint</b><br /> 4. <b>Consultation</b></li></ol>",
     ],
     answers: {
       default: {
         replies: [
-          "I am sorry, I am not sure I understood your request. Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/order-now' title='Use our catering form to order' class='link'>catering</a> form to place your order.",
+          "I am sorry, I am not sure I understood your request. Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/order-now' title='Use our catering form to order' class='link'>catering form</a> to place your order.",
           "Thank you.",
         ],
         ending: true,
@@ -32,7 +32,7 @@ var questions = {
       },
       "catering|2": {
         replies: [
-          "Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/order-now' title='Use our catering form to order' class='link'>catering</a> form to place your catering order.",
+          "Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/order-now' title='Use our catering form to order' class='link'>catering form</a> to place your catering order.",
         ],
       },
       "complaint|help|3": {
@@ -52,13 +52,17 @@ var questions = {
   1: {
     name: "Do other thing",
     question: [
-      "Would you be interested in engaging in any additional activities?",
+      "Do you need something else?",
     ],
     answers: {
       default: {
         replies: [
           "I am sorry, I am not sure I understood that request. Please click this link to read our <a target='_blank' href='https://www.mariamskitchen.nyc/#faqs' title='read our FAQs' class='link'>FAQs</a>.",
         ],
+      },
+
+      "please tell me": {
+        replies: ["Please make use of FAQs to learn more. Please click this link to read our <a target='_blank' href='https://www.mariamskitchen.nyc/#faqs' title='read our FAQs' class='link'>FAQs</a>."],
       },
       "i don't|don't|no": {
         replies: ["Well...", "I insist"],
@@ -72,6 +76,24 @@ var questions = {
           "What would you like to know about Mariam's Kitchen?",
         ],
       },
+      "carte|a la carte|1": {
+        replies: ["Great! Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/menu'>menu</a> page to choose your dishes."],
+      },
+      "catering|2": {
+        replies: [
+          "Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/order-now' title='Use our catering form to order' class='link'>catering form</a> to place your catering order.",
+        ],
+      },
+      "complaint|help|3": {
+        replies: [
+          "I apologize for any inconvenience caused. Please send your complaints to <a target='_blank' href='mailto:eat@mariamskitchen.nyc' title='Mail us your complaints' class='link'>eat@mariamskitchen.nyc</a>, and we will address it promptly.",
+        ],
+      },
+      "consultation|consult|4": {
+        replies: [
+          "Please click this <a target='_blank' href='https://calendar.app.google/haCMbrEr1MVQFXvGA' title='Book a consultation' class='link'>link</a> to book a consultation.",
+        ],
+      }
     },
   },
 
@@ -84,6 +106,24 @@ var questions = {
       default: {
         replies: [
           "I am sorry, I am not sure I understood that request. Please click this link to read our <a target='_blank' href='https://www.mariamskitchen.nyc/#faqs' title='read our FAQs' class='link'>FAQs</a>.",
+        ],
+      },
+      "carte|a la carte|1": {
+        replies: ["Great! Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/menu'>menu</a> page to choose your dishes."],
+      },
+      "catering|2": {
+        replies: [
+          "Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/order-now' title='Use our catering form to order' class='link'>catering form</a> to place your catering order.",
+        ],
+      },
+      "complaint|help|3": {
+        replies: [
+          "I apologize for any inconvenience caused. Please send your complaints to <a target='_blank' href='mailto:eat@mariamskitchen.nyc' title='Mail us your complaints' class='link'>eat@mariamskitchen.nyc</a>, and we will address it promptly.",
+        ],
+      },
+      "consultation|consult|4": {
+        replies: [
+          "Please click this <a target='_blank' href='https://calendar.app.google/haCMbrEr1MVQFXvGA' title='Book a consultation' class='link'>link</a> to book a consultation.",
         ],
       },
       "want menu|customized menu|menu": {
@@ -138,9 +178,9 @@ var questions = {
       "additional fee|hidden fee|terms & condition": {
         replies: ["Yes, there is a tax applied to all orders, which is 8.8%"],
       },
-      "catering services|catering": {
+      "catering services": {
         replies: [
-          "Yes! We do weddings, parties, and private events. The minimum for a catering order is $250. <a target='_blank' href='mailto:eat@mariamskitchen.nyc' title='Mail us for more enquiries' class='link'>Email</a> us to place your order.",
+          "We do catering services. We do weddings, parties, and private events. The minimum for a catering order is $250. <a target='_blank' href='mailto:eat@mariamskitchen.nyc' title='Mail us for more enquiries' class='link'>Email us</a> to place your order.",
         ],
       },
       "indoor catering|outdoor catering": {
@@ -309,23 +349,41 @@ var questions = {
           "I don't think I got that, but for me, this conversation is <b>Great</b> 👌",
         ],
       },
+      "carte|a la carte|1": {
+        replies: ["Great! Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/menu'>menu</a> page to choose your dishes."],
+      },
+      "catering|2": {
+        replies: [
+          "Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/order-now' title='Use our catering form to order' class='link'>catering form</a> to place your catering order.",
+        ],
+      },
+      "complaint|help|3": {
+        replies: [
+          "I apologize for any inconvenience caused. Please send your complaints to <a target='_blank' href='mailto:eat@mariamskitchen.nyc' title='Mail us your complaints' class='link'>eat@mariamskitchen.nyc</a>, and we will address it promptly.",
+        ],
+      },
+      "consultation|consult|4": {
+        replies: [
+          "Please click this <a target='_blank' href='https://calendar.app.google/haCMbrEr1MVQFXvGA' title='Book a consultation' class='link'>link</a> to book a consultation.",
+        ],
+      },
       "i don't|don't|no": {
         replies: ["...", "For me, this conversation is <b>Great</b> 👌"],
       },
       awesome: {
-        replies: [" <b>Awesome</b>! Nice to hear 👌"],
+        replies: ["<b>Awesome</b>! Nice to hear 👌"],
       },
       great: {
-        replies: [" <b>Great</b>! Nice to hear 👌"],
+        replies: ["<b>Great</b>! Nice to hear 👌"],
       },
       "better|best": {
-        replies: [" <b>Better</b>! Nice to hear 👌"],
+        replies: ["<b>Better</b>! Nice to hear 👌"],
       },
       good: {
-        replies: [" <b>Good</b>! Nice to hear 👌"],
+        replies: ["<b>Good</b>! Nice to hear 👌"],
       },
       bad: {
-        replies: [" <b>Bad</b>! We are working to make it better 👌"],
+        replies: ["<b>Bad</b>! We are working to make it better 👌"],
       },
     },
   },
