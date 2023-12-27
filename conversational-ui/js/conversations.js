@@ -27,20 +27,20 @@ var questions = {
         ],
         ending: true,
       },
-      "carte|a la carte|1": {
+      "carte|a la carte|one|1": {
         replies: ["Great! Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/menu'>menu</a> page to choose your dishes."],
       },
-      "catering|2": {
+      "catering|two|2": {
         replies: [
           "Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/order-now' title='Use our catering form to order' class='link'>catering form</a> to place your catering order.",
         ],
       },
-      "complaint|help|3": {
+      "complaint|help|three|3": {
         replies: [
           "I apologize for any inconvenience caused. Please send your complaints to <a target='_blank' href='mailto:eat@mariamskitchen.nyc' title='Mail us your complaints' class='link'>eat@mariamskitchen.nyc</a>, and we will address it promptly.",
         ],
       },
-      "consultation|consult|4": {
+      "consultation|consult|four|4": {
         replies: [
           "Please click this <a target='_blank' href='https://calendar.app.google/haCMbrEr1MVQFXvGA' title='Book a consultation' class='link'>link</a> to book a consultation.",
         ],
@@ -52,7 +52,7 @@ var questions = {
   1: {
     name: "Do other thing",
     question: [
-      "Do you need something else?",
+      "Would you be interested in anything else?", "Please type <b>Yes</b> or <b>No</b>.",
     ],
     answers: {
       default: {
@@ -65,7 +65,7 @@ var questions = {
         replies: ["Please make use of FAQs to learn more. Please click this link to read our <a target='_blank' href='https://www.mariamskitchen.nyc/#faqs' title='read our FAQs' class='link'>FAQs</a>."],
       },
       "i don't|don't|no": {
-        replies: ["Well...", "I insist"],
+        replies: ["Thank you."],
       },
       "yes|yeah|great|sure|of|course": {
         replies: ["What would you like to know about Mariam's Kitchen?"],
@@ -81,7 +81,7 @@ var questions = {
       },
       "catering|2": {
         replies: [
-          "Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/order-now' title='Use our catering form to order' class='link'>catering form</a> to place your catering order.",
+          "Please find more information about catering on our <a target='_blank' href='https://www.mariamskitchen.nyc/order-now' title='Use our catering form to order' class='link'>catering form</a> here.",
         ],
       },
       "complaint|help|3": {
@@ -100,7 +100,7 @@ var questions = {
   2: {
     name: "FAQs",
     question: [
-      "If you have any question, please type your question and I will try my best to provide an answer",
+      "If you have any questions, please type your question and I will try my best to provide an answer",
     ],
     answers: {
       default: {
@@ -132,7 +132,7 @@ var questions = {
         ],
       },
       "contact|reach you|phone|number": {
-        replies: ["You can contact Mariam's Kitchen customer care through this number <a href='tel:475-289-6039'>tel:475-289-6039</a>"],
+        replies: ["You can contact Mariam's Kitchen customer care through this number <a href='tel:475-289-6039'>475-289-6039</a>"],
       },
       "email": {
         replies: [
@@ -145,17 +145,17 @@ var questions = {
         ],
       },
       "buffet-style|buffet|plated meals|plate": {
-        replies: ["Yes, we offer", "Yes, we do"],
+        replies: ["Yes, we offer buffet-style", "Please find more information our <a target='_blank' href='https://www.mariamskitchen.nyc/order-now' title='Use our catering form to order' class='link'>catering form</a>."],
       },
       "i want to order|i would like to order|i am ordering|ordering": {
         replies: ["Great! Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/menu'>menu</a> page to choose your dishes.", "Also, take a look at our <a target='_blank' href='https://mariamskitchen.nyc/s/Mariams-Kitchen-menu-1.pdf' title='Download our menu' class='link'>menu</a> for other options to choose from. "],
       },
-      "hours|operation hours|working hours": {
+      "hours|operation hours|working hours|are you open|open": {
         replies: ["Wednesdays-Saturdays 1pm-10pm"],
       },
       "prices|price|dish price|price list": {
         replies: [
-          "Please click this <a target='_blank' href='https://mariamskitchen.nyc/s/Mariams-Kitchen-menu-1.pdf' title='Download our menu' class='link'>link</a> to download our menu",
+          "Please click this <a target='_blank' href='https://mariamskitchen.nyc/s/Mariams-Kitchen-menu-1.pdf' title='Download our menu' class='link'>link</a> to download our menu which has all the prices listed.",
         ],
       },
       "payment methods|pay|cash|card": {
@@ -337,7 +337,25 @@ var questions = {
     },
   },
 
+  //! Copy-paste FAQs content here !//
   3: {
+    name: "Anything Else",
+    question: [
+      "Is there anything else I would help you with?",
+      "Please type <b>Yes</b> or <b>No</b>.",
+    ],
+    answers: {
+      default: {
+        replies: [
+          "I don't think I got that, but for me 👌",
+        ],
+      },
+
+      //! FAQs contents should go below !//
+    },
+  },
+
+  4: {
     name: "User feedback",
     question: [
       "How would you describe Mariam's Bot?",
@@ -388,7 +406,7 @@ var questions = {
     },
   },
 
-  4: {
+  5: {
     name: "ending",
     question: ["See ya! 👋", "<a onclick='location.reload()' class='link'>Restart conversation</a>", "-- CONVERSATION END --"],
     ending: true,
