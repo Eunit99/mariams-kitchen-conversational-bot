@@ -284,7 +284,7 @@ a.floating:after {
 .chatbox {
   position: fixed;
   bottom: 0;
-  right: 4px;
+  right: 0;
   width: 310px;
   /* Entire width of chat window */
   height: 400px;
@@ -304,14 +304,15 @@ a.floating:after {
 }
 
 .chatbox--closed {
-  bottom: -400px;
+  bottom: -500px;
 }
 
 div.received_msg p,
 div.sent_msg p {
-  animation: bounceIn 0.2s ease;
+  -webkit-animation: bounceIn 0.2s ease;
   font-size: 14px;
   transform-origin: 0 0 0;
+  animation: bounceIn 0.2s ease;
 }
 
 .chatbox__title,
@@ -696,11 +697,6 @@ img.chat_img {
 
 .section.group {
   margin: 40px 12px;
-}
-
-.container {
-  padding: 80px 10px;
-  margin: -15px;
 }
 
 .card-body {
