@@ -2,7 +2,7 @@
 
 These are the themes for Helene UI chat window
 
-## How to Make Use of the Themes:**
+## How to Make Use of the Themes:\*\*
 
 This is a guide on how to use/change themes. The themes are located in `themes.css` or the minified version as `themes.min.css` can only be activated/changed manually by the admin for now.
 
@@ -45,5 +45,5 @@ To deploy your code to jsDeliver CDN, you will need to run the following command
 
 `npm run publish`
 
-- Then,  you will need to publish a release with a tag, say `1.0.3`
+- Then, you will need to publish a release with a tag, say `1.0.3`
 - Then, head over to SquareSpace and update the code
