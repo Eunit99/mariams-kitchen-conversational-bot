@@ -21,9 +21,22 @@
       "default",
       {
         "ignore": [
-          "-webkit-tap-highlight-color"
+          "-webkit-tap-highlight-color",
+          "overscroll-behavior-x",
+          "overscroll-behavior-x",
+          "overscroll-behavior-y",
+          "overscroll-behavior-y",
+          "overscroll-behavior-y"
         ]
       }
     ]
-  }
+  },
+  "browserslist": [
+    "defaults",
+    "not ie 11",
+    "not ios_saf <= 16.5",
+    "not safari <= 16.5",
+    "not ios_saf <= 16.5",
+    "not safari <= 16.5"
+  ]
 }
