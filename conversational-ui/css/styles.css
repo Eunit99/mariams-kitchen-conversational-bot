@@ -6,6 +6,11 @@
     * Licensed under MIT License (https://github.com/Eunit99/Helene-UI/blob/master/LICENSE)
 */
 
+:root {
+  --chatbox-height: 420px;
+  --chatbox-width: 310px;
+}
+
 body {
   -webkit-tap-highlight-color: transparent;
   /* Removes the blue highlight when button tapped on mobile */
@@ -285,9 +290,9 @@ a.floating:after {
   position: fixed;
   bottom: 0;
   right: 0;
-  width: 310px;
+  width: var(--chatbox-width);
   /* Entire width of chat window */
-  height: 400px;
+  height: var(--chatbox-height);
   /* Entire width of chat window */
   background-color: inherit;
   -webkit-transition: all 600ms cubic-bezier(0.19, 1, 0.22, 1);
@@ -304,7 +309,7 @@ a.floating:after {
 }
 
 .chatbox--closed {
-  bottom: -500px;
+  bottom: -(calc(var(--chatbox-width) + var(--chatbox-height)));
 }
 
 div.received_msg p,
@@ -474,6 +479,8 @@ div.chatbox__body.messaging::-webkit-scrollbar,
   max-width: 100%;
   line-height: 20px;
   overflow-y: scroll;
+  overscroll-behavior-y: none;
+  overscroll-behavior-x: none;
 }
 
 .chatbox__body:before {
@@ -669,8 +676,8 @@ img.chat_img {
   left: 50%;
   font-size: 50px;
   color: #ffffff;
-  transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
 }
 
 
@@ -735,14 +742,7 @@ a {
   color: var(--creative__primary__2, #004d3b);
 }
 
-a.btn {
-  color: var(--white, #ffffff);
-  font-size: 16px;
-  font-family: Arial, Helvetica, sans-serif;
-  background-color: var(--creative__primary__1, #00c497);
-  padding: 8px 14px;
-  border-radius: 4px;
-}
+
 
 
 /* Styling for responsiveness END */
