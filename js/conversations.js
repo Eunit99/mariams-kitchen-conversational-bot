@@ -17,7 +17,7 @@ var questions = {
         intro: true,
         question: [
             "Hello, Welcome to Mariam's Kitchen! How may I assist you?",
-            "Please type either:<br />1. <b>A la carte</b><br /> 3. <b>Consultation</b></li> <br /> 2. <b>Catering</b><br /> 4. <b>Feedback</b></ol>",
+            "Please type either:<br />1. <b>A la carte</b><br /> 2. <b>Catering</b><br /> 3. <b>Consultation</b></li> <br /> 4. <b>Feedback</b></ol>",
         ],
         answers: {
             default: {
@@ -35,16 +35,16 @@ var questions = {
                     "Please make use of our <a target='_blank' href='https://www.mariamskitchen.nyc/order-now' title='Use our catering form to order' class='link'>catering form</a> to place your catering order.",
                 ],
             },
-            "complaint|help|feedback|suggestion|suggestions|three|3": {
-                replies: [
-                    "I apologize for any inconvenience caused. Please send your feedback or complaints to <a target='_blank' href='mailto:eat@mariamskitchen.nyc' title='Mail us your complaints' class='link'>eat@mariamskitchen.nyc</a>, and we will address it promptly.",
-                ],
-            },
-            "consultation|consult|four|4": {
+            "consultation|consult|four|3": {
                 replies: [
                     "Please click this <a target='_blank' href='https://calendar.app.google/haCMbrEr1MVQFXvGA' title='Book a consultation' class='link'>link</a> to book a consultation.",
                 ],
                 ending: true,
+            },
+            "complaint|help|feedback|suggestion|suggestions|three|4": {
+                replies: [
+                    "I apologize for any inconvenience caused. Please send your feedback or complaints to <a target='_blank' href='mailto:eat@mariamskitchen.nyc' title='Mail us your complaints' class='link'>eat@mariamskitchen.nyc</a>, and we will address it promptly.",
+                ],
             },
         },
     },
@@ -577,7 +577,7 @@ var questions = {
     4: {
         name: "User feedback",
         question: [
-            "How would you describe Mariam's Bot?",
+            "How would you describe Mariam's Kitchen Bot?",
             "Like  <b>Awesome</b>?  <b>Great</b>?  <b>Better</b>?  <b>Good</b>? <b>Bad</b>? ",
         ],
         answers: {

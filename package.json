@@ -1,32 +1,32 @@
 {
-  "name": "mariam-kitchen",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\"",
-    "start": "babel js/scripts.js -d . && minify js/scripts.js > js/scripts.min.js && minify js/settings.js > js/settings.min.js && minify js/conversations.js > js/conversations.min.js && minify css/styles.css > css/styles.min.css",
-    "build": "babel js/scripts.js -d . && minify js/scripts.js > js/scripts.min.js && minify js/settings.js > js/settings.min.js && minify js/conversations.js > js/conversations.min.js && minify css/styles.css > css/styles.min.css",
-    "np": "np",
-    "publish": "npm run build && git add . && git commit -m \"Feat: Add update and publish package\" && git push library feature"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/Eravengers/Mariam-Kitchen-Files.git"
-  },
-  "author": "Eunit",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/Eravengers/Mariam-Kitchen-Files/issues"
-  },
-  "homepage": "https://github.com/Eravengers/Mariam-Kitchen-Files#readme",
-  "dependencies": {
-    "babel-cli": "^6.26.0",
-    "babel-preset-env": "^1.7.0",
-    "json-server": "^0.17.0",
-    "minify": "^9.1.0"
-  },
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com"
-  }
+    "name": "mariam-kitchen",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\"",
+        "start": "babel js/scripts.js -d . && minify js/scripts.js > js/scripts.min.js && minify js/settings.js > js/settings.min.js && minify js/conversations.js > js/conversations.min.js && minify css/styles.css > css/styles.min.css",
+        "build": "babel js/scripts.js -d . && minify js/scripts.js > js/scripts.min.js && minify js/settings.js > js/settings.min.js && minify js/conversations.js > js/conversations.min.js && minify css/styles.css > css/styles.min.css",
+        "np": "np",
+        "publish": "npm run build && git add . && git commit -m \"Feat: Add update and publish package\" && git push library feature && cd ../ && git add . && git commit -m \"Feat: Add update and publish package\" && git push origin feature && cd conversational-ui"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/Eravengers/Mariam-Kitchen-Files.git"
+    },
+    "author": "Eunit",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://github.com/Eravengers/Mariam-Kitchen-Files/issues"
+    },
+    "homepage": "https://github.com/Eravengers/Mariam-Kitchen-Files#readme",
+    "dependencies": {
+        "babel-cli": "^6.26.0",
+        "babel-preset-env": "^1.7.0",
+        "json-server": "^0.17.0",
+        "minify": "^9.1.0"
+    },
+    "publishConfig": {
+        "registry": "https://npm.pkg.github.com"
+    }
 }
