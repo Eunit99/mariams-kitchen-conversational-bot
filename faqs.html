@@ -137,6 +137,56 @@
 
 
 
+    <!-- Code injection -->
+    <!-- Place this part in the code injection part of the website in the footer -->
+
+    <!--   Scripts for Chat in window  -->
+    <noscript>
+      <div class="noJS noJSText">
+        <i class="fa fa-exclamation-triangle fa-3x"></i>
+        Helene UI can't run without JavaScript. Click
+        <a href="https://enable-javascript.com/" title="Learn how to enable JavaScript on your browser" target="_blank"
+          rel="noreferrer noopener">here</a>
+        to learn more.
+      </div>
+    </noscript>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/gh/Eunit99/mariams-kitchen-conversational-bot@1.0.3/js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/gh/Eunit99/mariams-kitchen-conversational-bot@1.0.3/js/conversations.min.js"></script>
+    <script type="text/javascript"
+      src="https://cdn.jsdelivr.net/gh/Eunit99/mariams-kitchen-conversational-bot@1.0.3/js/settings.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/gh/Eunit99/mariams-kitchen-conversational-bot@1.0.3/js/scripts.min.js"></script>
+    <script>
+      // Styling for IE and unsupported browsers START
+
+      // * This is a tweak to make IE support `--default__theme`
+      // * After trying so many methods; polyfill, ponyfill, ie11CustomProperties inclusive
+      // * All those methods didn't work out; so I'm using now!
+      // * (c) Eunit 2019 - 2020
+
+      if (!document.body.msMatchesSelector === false) {
+        // for index.html
+        window.MSInputMethodContext &&
+          document.documentMode &&
+          document.write(
+            '<link rel="stylesheet" href="css/ie-default-style.css" />'
+          );
+      }
+
+      // Styling for IE and unsupported browsers END
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      function goBack() {
+
+        history.back();
+      }
+    </script>
+    <!-- Footer Code Injection END -->
   </body>
 
 </html>
