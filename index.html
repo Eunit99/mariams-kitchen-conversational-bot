@@ -14,8 +14,8 @@
 
     <!-- Code Injection START -->
     <!-- Place this in the header -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flexboxgrid/6.3.1/flexboxgrid.min.css" />
     <!-- Custom fonts for this template -->
     <link href="https://fonts.googleapis.com/css?family=Catamaran:100,200,300,400,500,600,700,800,900" rel="stylesheet" />
     <link href="https://fonts.googleapis.com/css?family=Muli" rel="stylesheet" />
@@ -32,12 +32,11 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Eunit99/mariams-kitchen-conversational-bot@1.0.4/css/themes.min.css" />
 
     <!--[if lt IE 9]>
-        <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-        <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-      <![endif]-->
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
     <!-- Code Injection END -->
-
-</head>
+  </head>
 
 <body>
     <!-- Navbar -->
@@ -270,12 +269,15 @@
     </div>
     <!-- /FAQs -->
 
-
-
     <!-- Footer Code Injection START -->
 
+    <div class="back-icon">
+      <div class="back" onclick="goBack()">
+        <img src="./img/icons8-left-50.png" alt="back" />
 
-
+        <a rel="noopener" target="_blank" href="javascript:history.back();" class="btn">BACK</a>
+      </div>
+    </div>
     <!--==== Chat in window START ========-->
     <div class="chatbox_container displayNoneChat spacer">
         <div class="row">
@@ -394,10 +396,11 @@
     </footer>
     <!-- /Footer -->
 
+
+
+
     <!-- Code injection -->
     <!-- Place this part in the code injection part of the website in the footer -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
-    <script src="js/script.js"></script>
     <!--   Scripts for Chat in window  -->
     <noscript>
       <div class="noJS noJSText">
@@ -431,11 +434,17 @@
 
         // Styling for IE and unsupported browsers END
     </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+      integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+      crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+    <script>
+      function goBack() {
 
+        history.back();
+      }
+    </script>
     <!-- Footer Code Injection END -->
-
-
-
-</body>
+  </body>
 
 </html>
