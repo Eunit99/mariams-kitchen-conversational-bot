@@ -91,12 +91,15 @@ let stateCheck = setInterval(() => {
       // if pathname matches 'menu'
       popupText.innerHTML = menuText;
 
+      // display back button only in menu pageshow
+      showBackBtn();
       // Uncomment below to display the text "All rates are subject to change"
 
       // showPopup();
       // togglePopup();
     } else {
       console.error(`Error! Can't display menu popup. Pathname ${pathname} doesn't match with /menu`);
+      console.info(`Info! Can't display back btn. Pathname ${pathname} doesn't match with /menu`);
     }
 
 
@@ -226,4 +229,14 @@ const removeOverlay = () => {
   timedPopupOverlay.classList.remove("timed-popup-overlay");
 };
 
+
+
+const showBackBtn = () => {
+
+  // get the back button container
+  const backBtn = document.getElementById("goBack");
+
+  // set the style to display = "flex"
+  backBtn.style.display = "flex";
+}
 console.info("Ξunit");

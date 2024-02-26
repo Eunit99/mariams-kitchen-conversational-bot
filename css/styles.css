@@ -710,7 +710,7 @@ section.catering {
 }
 
 section.catering .profile-img {
-  background-color: #fff;
+  background-color: var(--color-white);
   background-image: url(https://www.mariamskitchen.nyc/s/Mariam-picture.png);
   background-size: cover;
   background-repeat: no-repeat;
@@ -764,16 +764,16 @@ section.catering a.btn,
 
 section.catering .btn.order,
 .nav .btn.order {
-  background-color: #cc5500;
-  color: #fff;
+  background-color: var(--color-primary);
+  color: var(--color-white);
   max-width: 120px;
   margin: auto 12px;
 }
 
 section.catering .btn.menu-pdf {
-  color: #cc5500;
-  background-color: #fff;
-  border: 1px solid #cc5500;
+  color: var(--color-primary);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-primary);
 }
 
 .card-img-overlay {
@@ -805,7 +805,7 @@ section.catering .btn.menu-pdf {
 .text-div .heading {
   font-family: "Overlock Regular", sans-serif;
   font-weight: 900;
-  color: #b14725;
+  color: var(--color-primary);
   font-size: 35px;
   letter-spacing: -0.02em;
   cursor: pointer;
@@ -842,7 +842,7 @@ section.catering .btn.menu-pdf {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  background-color: #b14725;
+  background-color: var(--color-primary);
   width: 260px;
   cursor: pointer;
   padding: 15px;
@@ -853,8 +853,8 @@ section.catering .btn.menu-pdf {
 
 .consultation div .book-consultation a {
   font-weight: 700;
+  color: var(--color-white);
   text-decoration: none;
-  color: #ffffff;
 }
 
 .consultation div .book-consultation .icon {
@@ -867,49 +867,45 @@ section.catering .btn.menu-pdf {
   width: 100%;
   height: 100%;
 }
-.back-icon{
- 
-  display: flex;
+
+.back-button-container {
+  display: none;
   justify-content: center;
   align-items: center;
   padding: 20px 0;
   margin: 50px 0;
 }
-.back{
-  height: 35px;
+
+.back {
   border-radius: 6.75px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  background-color: #b14725;
-  width: 200px;
-  cursor: pointer;
-  padding: 15px;
+  justify-content: space-around;
+  background-color: var(--color-primary);
+  width: 120px;
   font-family: 'Overlock';
   font-weight: 700;
-  line-height: 70px;
+  height: 40px;
+  color: var(--color-white);
+  max-width: 150px;
+  margin: auto 12px;
 }
 
-.back a{
+.back a {
   font-weight: 700;
   text-decoration: none;
-  color: #ffffff;
+  color: var(--color-white);
 }
 
 @media screen and (min-width: 768px) {
   .text-div .heading {
-
     font-weight: 900;
     font-size: 55px;
-
   }
 
 
-
   .text-div p {
-
     font-weight: normal;
-
     letter-spacing: -0.4px;
     font-size: 28px;
     margin-top: -40px
