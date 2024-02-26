@@ -878,6 +878,7 @@ section.catering .btn.menu-pdf {
 
 .back {
   border-radius: 6.75px;
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-around;

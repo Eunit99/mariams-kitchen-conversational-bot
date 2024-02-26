@@ -85,8 +85,8 @@ let stateCheck = setInterval(() => {
     }
 
 
-    // Match pathname with /menu
-    if (pathname === "/menu") {
+    // Check for "/menu"
+    if (pathname.includes("/menu")) {
 
       // if pathname matches 'menu'
       popupText.innerHTML = menuText;
