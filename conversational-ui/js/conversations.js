@@ -57,12 +57,12 @@ var questions = {
         answers: {
             default: {
                 replies: [
-                    "I am sorry, I am not sure I understood that request. Please read our <a target='_blank' href='https://www.mariamskitchen.nyc/#faqs' title='read our FAQs' class='link'>FAQs</a>.",
+                    "I am sorry, I am not sure I understood that request. Please read our <a target='_blank' href='https://www.mariamskitchen.nyc/faqs' title='read our FAQs' class='link'>FAQs</a>.",
                 ],
             },
 
             "please tell me": {
-                replies: ["Please make use of FAQs to learn more. Please read our <a target='_blank' href='https://www.mariamskitchen.nyc/#faqs' title='read our FAQs' class='link'>FAQs</a>."],
+                replies: ["Please make use of FAQs to learn more. Please read our <a target='_blank' href='https://www.mariamskitchen.nyc/faqs' title='read our FAQs' class='link'>FAQs</a>."],
             },
             "i don't|don't|no": {
                 replies: ["Thank you."],
@@ -105,7 +105,7 @@ var questions = {
         answers: {
             default: {
                 replies: [
-                    "I am sorry, I am not sure I understood that request. Please read our <a target='_blank' href='https://www.mariamskitchen.nyc/#faqs' title='read our FAQs' class='link'>FAQs</a>.",
+                    "I am sorry, I am not sure I understood that request. Please read our <a target='_blank' href='https://www.mariamskitchen.nyc/faqs' title='read our FAQs' class='link'>FAQs</a>.",
                 ],
             },
             "carte|a la carte|1": {
@@ -346,7 +346,7 @@ var questions = {
         answers: {
             default: {
                 replies: [
-                    "I am sorry, I am not sure I understood that request. Please read our <a target='_blank' href='https://www.mariamskitchen.nyc/#faqs' title='read our FAQs' class='link'>FAQs</a>.",
+                    "I am sorry, I am not sure I understood that request. Please read our <a target='_blank' href='https://www.mariamskitchen.nyc/faqs' title='read our FAQs' class='link'>FAQs</a>.",
                 ],
             },
             "carte|a la carte|1": {

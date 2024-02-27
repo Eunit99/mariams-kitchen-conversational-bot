@@ -644,7 +644,13 @@ select::-ms-expand {
   /*spacing between box and outline*/
   margin: auto 0px;
   cursor: pointer;
+  font-weight: 700;
   text-transform: none !important;
+  min-height: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
 }
 
 .dropdown p {
