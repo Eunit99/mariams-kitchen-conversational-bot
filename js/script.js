@@ -138,7 +138,7 @@ let stateCheck = setInterval(() => {
       // if pathname matches '/'
       popupText.innerHTML = overBookedText;
 
-     // showPopup();
+      // showPopup();
       // togglePopup();
     } else {
       console.error(`Error! Can't display order-now popup. Pathname ${pathname} doesn't match with /`);
@@ -238,5 +238,10 @@ const showBackBtn = () => {
 
   // set the style to display = "flex"
   backBtn.style.display = "flex";
+}
+
+//! Script to go back in history
+function goBack() {
+  history.back();
 }
 console.info("Ξunit");
