@@ -52,7 +52,8 @@ function timePopup() {
   if (timedPopupEmailAddrValue === "") {
 
   }
-}
+};
+
 
 let stateCheck = setInterval(() => {
   if (document.readyState === "complete") {
@@ -76,7 +77,7 @@ let stateCheck = setInterval(() => {
       // if pathname matches 'cart'
       popupText.innerHTML = cartText;
 
-      // Uncomment below to display the text "All rates are subject to change"
+      // display the text "All rates are subject to change"
 
       // showPopup();
       // togglePopup();
@@ -93,7 +94,7 @@ let stateCheck = setInterval(() => {
 
       // display back button only in menu pageshow
       showBackBtn();
-      // Uncomment below to display the text "All rates are subject to change"
+      // display the text "All rates are subject to change"
 
       // showPopup();
       // togglePopup();
@@ -133,7 +134,7 @@ let stateCheck = setInterval(() => {
     if (pathname === "/") {
 
 
-      // Uncomment below to display the text "We are booked until --"
+      // display the text "We are booked until --"
 
       // if pathname matches '/'
       popupText.innerHTML = overBookedText;
@@ -157,7 +158,7 @@ let stateCheck = setInterval(() => {
 const timedPopupForFirstVisitor = () => {
   setTimeout(() => {
 
-    // Uncomment below to display the newsletter popup
+    // display the newsletter popup
 
     /* showTimedPopupForFirstVisitor();
     addOverlay(); */
@@ -244,4 +245,98 @@ const showBackBtn = () => {
 function goBack() {
   history.back();
 }
+
+// custom modal for survey form
+
+document.addEventListener("DOMContentLoaded", function () {
+  try {
+    MicroModal.init({
+      awaitCloseAnimation: true, // set to false, to remove close animation
+      onShow: function (modal, activeElement, event) {
+        // console.log("micromodal open");
+        microModalShow(modal, activeElement, event);
+        addModalContentHeight('short');
+        /**************************
+          For full screen scrolling modal, 
+          uncomment line below & comment line above
+         **************************/
+        // addModalContentHeight('tall');
+      },
+      onClose: function (modal) {
+        // console.log("micromodal close");
+      }
+    });
+  } catch (e) {
+    console.log("micromodal error: ", e);
+  }
+});
+
+function microModalShow(modal, activeElement, event) {
+  if (modal.id === 'modal-1') {
+    // console.log("event target data bundle id: ", event.target.getAttribute("data-bundle-id"));
+  }
+}
+
+function addModalContentHeight(type) {
+  var type = (arguments[0] != null) ? arguments[0] : 'short';
+  var modalContainer = $("#modal-container");
+  var modalHeader = $("#modal-header");
+  var modalContentContent = $("#modal-content-content");
+  var modalContent = $("#modal-content");
+  var modalFooter = $("#modal-footer");
+
+  var modalIsDefined =
+    modalContainer.length &&
+    modalHeader.length &&
+    modalContent.length &&
+    modalFooter.length;
+
+  if (modalIsDefined) {
+    var modalContainerHeight = modalContainer.outerHeight();
+    var modalHeaderHeight = modalHeader.outerHeight();
+    var modalFooterHeight = modalFooter.outerHeight();
+
+    // console.log("modalContainerHeight: ", modalContainerHeight);
+    // console.log("modalHeaderHeight: ", modalHeaderHeight);
+    // console.log("modalFooterHeight: ", modalFooterHeight);
+
+    var offset = 80;
+
+    var height = modalContainerHeight - (modalHeaderHeight + modalFooterHeight + offset);
+
+    console.log('height: ', height);
+
+    if (!isNaN(height)) {
+      height = height > 0 ? height : 20;
+      if (type == 'short') {
+        modalContent.css({ 'height': height + 'px' });
+      }
+      else {
+        modalContainer.css({ 'height': '100%', 'overflow-y': 'hidden', 'margin-top': '40px' });
+        modalContentContent.css({ 'height': '100%', 'overflow-y': 'auto' });
+        modalContent.css({ 'overflow-y': 'visible' });
+        modalFooter.css({ 'margin-bottom': '120px' });
+      }
+      setTimeout(function () {
+        modalContent.css({ 'display': 'block' });
+        var modalContentDOM = document.querySelector('#modal-content');
+        modalContentDOM.scrollTop = 0;
+      });
+    }
+
+  }
+
+}
+
+
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+    const feedBackBtn = document.getElementById("feedback-btn");
+    feedBackBtn.style.display = "block";
+  }, 5000); // 5s
+})
+
+
 console.info("Ξunit");
+
+
