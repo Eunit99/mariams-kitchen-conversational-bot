@@ -246,14 +246,14 @@ function goBack() {
   history.back();
 }
 
-
+// custom modal for survey form
 
 document.addEventListener("DOMContentLoaded", function () {
   try {
     MicroModal.init({
       awaitCloseAnimation: true, // set to false, to remove close animation
       onShow: function (modal, activeElement, event) {
-        console.log("micromodal open");
+        // console.log("micromodal open");
         microModalShow(modal, activeElement, event);
         addModalContentHeight('short');
         /**************************
@@ -263,7 +263,7 @@ document.addEventListener("DOMContentLoaded", function () {
         // addModalContentHeight('tall');
       },
       onClose: function (modal) {
-        console.log("micromodal close");
+        // console.log("micromodal close");
       }
     });
   } catch (e) {
@@ -273,7 +273,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 function microModalShow(modal, activeElement, event) {
   if (modal.id === 'modal-1') {
-    console.log("event target data bundle id: ", event.target.getAttribute("data-bundle-id"));
+    // console.log("event target data bundle id: ", event.target.getAttribute("data-bundle-id"));
   }
 }
 
@@ -329,6 +329,12 @@ function addModalContentHeight(type) {
 }
 
 
+document.addEventListener("DOMContentLoaded", function () {
+  setTimeout(() => {
+    const feedBackBtn = document.getElementById("feedback-btn");
+    feedBackBtn.style.display = "block";
+  }, 5000); // 5s
+})
 
 
 console.info("Ξunit");

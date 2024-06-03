@@ -1359,6 +1359,8 @@ button.external {
   -moz-transition: 0.2s ease-out;
   -ms-transition: 0.2s ease-out;
   -o-transition: 0.2s ease-out;
+
+  display: none;
 }
 
 .feedback-btn:hover {
