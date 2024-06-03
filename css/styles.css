@@ -1341,7 +1341,6 @@ button.external {
 
 .feedback-btn {
   position: fixed;
-  position-attachment: fixed;
   width: 40px;
   height: 100px;
   background: var(--color-primary, #cc5500);
