@@ -81,3 +81,5 @@ $(document).ready(function () {
     $("#copyright").text(copyrightYear);
   });
 });
+
+console.info("Eunit");
