@@ -1,3 +1,5 @@
+"use strict";
+
 (function ($) {
   $(document).ready(function () {
     var $chatbox = $(".chatbox"),
@@ -7,9 +9,28 @@
         $chatbox__title = $(".chatbox__title");
 
     $("body").ready(function () {
-      $(".chatbox_container").hide().delay(1000).fadeIn(1000); // You can customize the time you want the chat window to be displayed with the 'delay' and 'fadeIn' properties
-      $(".chatbox_container").removeClass("displayNoneChat"); //Removes class "displayNoneChat" and displays the Chatbox container
-      $floatingBubble.hide(); // Hide the floating bubble by default
+
+      try {
+        var hideMKChat = localStorage.getItem("hideMKChat");
+
+        if (hideMKChat) {
+          // hide chat header
+          $chatbox.addClass("chatbox--closed");
+          $(".floatingBubble").hide().fadeIn(1e3); // fadeIn (100ms) of the floatingBubble
+        } else {
+          // show chat header
+          $(".chatbox_container").hide().delay(1000).fadeIn(1000); // You can customize the time you want the chat window to be displayed with the 'delay' and 'fadeIn' properties
+          $(".chatbox_container").removeClass("displayNoneChat"); //Removes class "displayNoneChat" and displays the Chatbox container
+          $floatingBubble.hide(); // Hide the floating bubble by default
+        }
+      } catch (error) {
+        console.log("hideMKChat not defined");
+
+        // show chat header
+        $(".chatbox_container").hide().delay(1000).fadeIn(1000); // You can customize the time you want the chat window to be displayed with the 'delay' and 'fadeIn' properties
+        $(".chatbox_container").removeClass("displayNoneChat"); //Removes class "displayNoneChat" and displays the Chatbox container
+        $floatingBubble.hide(); // Hide the floating bubble by default
+      }
     });
     $chatbox__title.on("click", function () {
       $floatingBubble.fadeOut(100).hide(); // fadeOut (100ms) of the floatingBubble
@@ -28,6 +49,9 @@
       $chatbox.addClass("chatbox--tray");
     });
     $chatboxTitleClose.on("click", function (e) {
+      // add to localStorage MK chat
+      localStorage.setItem("hideMKChat", true);
+
       e.stopPropagation();
       $chatbox.addClass("chatbox--closed");
       $(".floatingBubble").hide().fadeIn(1e3); // fadeIn (100ms) of the floatingBubble
